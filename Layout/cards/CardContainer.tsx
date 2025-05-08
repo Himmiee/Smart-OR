@@ -5,15 +5,22 @@ interface CardContainerProps {
   bgImage: string;
 }
 
-const CardContainer: React.FC<CardContainerProps> = ({ children, bgImage }) => {
+export const CardContainer: React.FC<CardContainerProps> = ({
+  children,
+  bgImage,
+}) => {
   return (
     <div
-      className="bg-cover bg-center py-20 text-white"
+      className="relative bg-cover bg-center text-white h-full"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <div className="container mx-auto px-4">{children}</div>
+      {/* Black overlay */}
+      <div className="absolute inset-0 bg-black/50 bg-opacity-50" />
+
+      {/* Content */}
+      <div className="relative z-10 container  max-w-screen-xl mx-auto h-full px-2 py-20">
+        {children}
+      </div>
     </div>
   );
 };
-
-export default CardContainer;

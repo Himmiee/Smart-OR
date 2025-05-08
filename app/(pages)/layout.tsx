@@ -1,18 +1,19 @@
 import Footer from "@/Layout/Footer";
 import Navbar from "@/Layout/Navbar";
-import { navItems } from "@/data/mockdata";
+import { navItems } from "@/Providers/data/data";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  let navbarBgColor = "bg-white";
+  const navbarBgColor = "bg-transparent backdrop-blur-sm";
+
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="bg-transparent antialiased relative">
         <Navbar bgColor={navbarBgColor} navItems={navItems} />
-        <main>{children}</main>
+        <main className="">{children}</main>
         <Footer />
       </body>
     </html>
