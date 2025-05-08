@@ -1,6 +1,6 @@
 import Footer from "@/Layout/Footer";
 import Navbar from "@/Layout/Navbar";
-import { navItems } from "@/Providers/Data/data";
+import { navItems } from "@/Providers/data/data";
 
 export default function RootLayout({
   children,

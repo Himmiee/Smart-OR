@@ -3,12 +3,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { HomeHeroSlideShowItems } from "@/Providers/Data/data";
+import { HomeHeroSlideShowItems } from "@/Providers/data/data";
 import { CardContainer } from "@/Layout/cards/CardContainer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CreditCard } from "lucide-react";
 
-export const HomeHero = () => {
+export const HomeHero: any = () => {
   const [current, setCurrent] = useState(0);
   const [previous, setPrevious] = useState(0);
   const delay = 10000;
