@@ -19,6 +19,14 @@ import slideImgFour from "@/public/sub/benefits/four-img.png";
 import consumerImg from "@/public/sub/consumers.png";
 import vendorImg from "@/public/sub/vendors.png";
 import financialImg from "@/public/sub/financial.png";
+import FidelityBankImg from "@/public/banks/fidelity.png";
+import FewtureBankImg from "@/public/banks/fewchore.png";
+import RenMoneyBankImg from "@/public/banks/renmoney.png";
+import OptimusBankImg from "@/public/banks/optimus.png";
+import AlternativeBankImg from "@/public/banks/alernative.png";
+// import WemaBankImg from "@/public/banks/wema.png";
+import StanbicBankImg from "@/public/banks/stanbix.png";
+import LetsBankImg from "@/public/banks/letshego.png";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -170,5 +178,37 @@ export const BenefitData = [
     btnText: "Grow with CREDICORP",
     description: "Grow your revenue with accelerated credit backed consumers.",
   },
- 
+];
+
+export const HIWData = [
+  {
+    id: "01",
+    text: "Check Your Eligibility",
+    description: "Answer a few quick questions. ",
+  },
+  {
+    id: "02",
+    text: "Choose a Financial Institution",
+    description: "Receive a decision in record time.",
+  },
+  {
+    id: "03",
+    text: "Apply & Get Approved",
+    description: "Receive a decision in record time.",
+  },
+  {
+    id: "04",
+    text: "Receive Your Credit",
+    description: "Ready to fuel your goals.",
+  },
+];
+
+export const BankImg = [
+  FidelityBankImg,
+  OptimusBankImg,
+  FewtureBankImg,
+  RenMoneyBankImg,
+  StanbicBankImg,
+  AlternativeBankImg,
+  LetsBankImg,
 ];

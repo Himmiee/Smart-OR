@@ -17,7 +17,7 @@ export const PersonCard = ({ imageUrl, name, profession }: PersonCardProps) => {
       }}
     >
       <div className="absolute inset-0 bg-black/30" />
-      <div className="absolute bottom-3 left-3 text-white z-10">
+      <div className="absolute bottom-8 left-3 text-white z-10">
         <p className="text-lg font-semibold">{name}</p>
         <p className="text-sm">{profession}</p>
       </div>

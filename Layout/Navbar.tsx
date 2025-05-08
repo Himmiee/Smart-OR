@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
     <nav
       className={`absolute top-0 left-0 w-full ${bgColor} pt-6 pb-4 z-50 backdrop-blur-sm bg-white/30`}
     >
-      <div className="container flex justify-between items-center max-w-screen-xl mx-auto px-4">
+      <div className="container flex justify-between items-center max-w-screen-xl mx-auto px-4 md:px-0">
         {/* Logo */}
         <Image src={CredicorpLogo} alt="logo" className="w-40 lg:w-48" />
 

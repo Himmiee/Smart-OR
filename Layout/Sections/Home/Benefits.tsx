@@ -5,8 +5,8 @@ import { BenefitData } from "@/Providers/data/data";
 
 export const BenefitsPage = () => {
   return (
-    <section className="py-12 px-4 md:px-0">
-      <div className="space-y-24">
+    <section className="py-12 ">
+      <div className="space-y-12 lg:space-y-24">
         <div className="flex justify-center items-center">
           <FormHeader
             pillText="BENEFITS"
@@ -19,7 +19,7 @@ export const BenefitsPage = () => {
         <div className="flex lg:mt-24 bg-amber-300">
           <BenefitSubComponent />
         </div>
-        <div className=" flex justify-center items-center ">
+        <div className=" flex justify-center items-center px-6 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl w-full">
             {BenefitData.map((item, index) => (
               <CardComponent

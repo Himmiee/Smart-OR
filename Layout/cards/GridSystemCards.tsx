@@ -20,7 +20,7 @@ export const CardComponent: React.FC<CardProps> = ({
   onClick,
 }) => {
   return (
-    <div className="max-w-sm w-full bg-white rounded-2xl shadow-md border overflow-hidden">
+    <div className="max-w-sm w-full bg-white rounded-2xl  border overflow-hidden">
       {/* Image */}
       <div className="relative w-full h-48 border-b">
         <Image

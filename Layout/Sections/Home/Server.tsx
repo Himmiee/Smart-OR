@@ -10,7 +10,7 @@ import { PeopleData } from "@/Providers/data/data";
 
 export const OurServicePage = () => {
   return (
-    <section className="bg-black text-white px-4 pt-12">
+    <section className="bg-black text-white pt-12">
       <div className="flex justify-center items-center">
         <FormHeader
           pillText="Our Services"
