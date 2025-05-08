@@ -31,9 +31,7 @@ export const HomeHero: any = () => {
       {/* Keep previous slide visible underneath */}
       <div className="absolute top-0 left-0 w-full h-full">
         <CardContainer bgImage={HomeHeroSlideShowItems[previous].img.src}>
-          <div className="flex items-center justify-between h-full opacity-0">
-            {/* Empty div to maintain structure */}
-          </div>
+          <div className="flex items-center justify-between h-full opacity-0"></div>
         </CardContainer>
       </div>
 
@@ -51,7 +49,7 @@ export const HomeHero: any = () => {
             <div className="flex flex-col md:flex-row items-center justify-between h-full w-full">
               {/* Text Content with animations */}
               <motion.div
-                className="max-w-full md:max-w-4xl space-y-4 md:space-y-6 p-4 md:p-8 mt-16 md:mt-0"
+                className="max-w-full md:max-w-4xl space-y-4 md:space-y-6 p-3.5 md:p-8 mt-32 md:mt-0"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -72,7 +70,7 @@ export const HomeHero: any = () => {
                     className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
                   >
                     <span>Access Your Credit</span>
-                    <CreditCard className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    <CreditCard className="ml-2 h-4 w-4 md:h-5 md:w-5 rotate-45 " />
                   </Button>
                   <Button
                     variant="outline"
@@ -86,7 +84,7 @@ export const HomeHero: any = () => {
               </motion.div>
 
               {/* Dot Navigation */}
-              <div className="hidden md:flex flex-col gap-3 pr-4 absolute right-4 top-1/2 transform -translate-y-1/2">
+              <div className="hidden flex-col gap-3 pr-4 absolute right-4 top-1/2 transform -translate-y-1/2">
                 {HomeHeroSlideShowItems.map((_, i) => (
                   <button
                     key={i}
@@ -99,12 +97,12 @@ export const HomeHero: any = () => {
               </div>
 
               {/* Mobile Dot Navigation */}
-              <div className="flex md:hidden flex-row gap-3 justify-center w-full absolute bottom-8 left-0">
+              <div className="flex flex-row gap-3 justify-center w-full absolute bottom-8 left-0">
                 {HomeHeroSlideShowItems.map((_, i) => (
                   <button
                     key={i}
                     onClick={() => handleDotClick(i)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    className={`w-3 h-3 md:w-2 md:h-2  rounded-full transition-all duration-300 ${
                       current === i ? "bg-white" : "bg-white/50"
                     }`}
                   />

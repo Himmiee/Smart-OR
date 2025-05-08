@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import topRightMissionImgOnClick from "@/public/sub/top-right-mission-img.png";
-import tbottomLeftMissionImgOnClick from "@/public/sub/bottom-left-footer.png";
+import topRightMissionImgOnClick from "@/public/sub/Item.png";
+import tbottomLeftMissionImgOnClick from "@/public/sub/Footer.png";
 import stackedOnImageCenter from "@/public/sub/Notification.png";
 import StackOnImageCenterBelow from "@/public/sub/Notification Container.png";
 import rightImg from "@/public/sub/mission.png";
@@ -25,14 +25,14 @@ export default function MissionPage() {
 
         {/* Right Image + Relative Container - More space with ml-8 */}
         <motion.div
-          className="hidden lg:flex justify-end relative w-full max-w-md ml-16"
+          className="hidden lg:flex justify-end relative w-full "
           initial="hidden"
           animate="visible"
           variants={containerVariants}
         >
           {/* Main Mission Image */}
           <motion.div
-            className="w-full cursor-pointer"
+            className="cursor-pointer w-4/5"
             whileHover="hover"
             variants={mainImageHover}
           >
@@ -50,7 +50,7 @@ export default function MissionPage() {
               rotate: 5,
               filter: "brightness(1.1)",
             }}
-            className="absolute -top-22 -right-12 w-64 h-64 cursor-pointer"
+            className="absolute -top-36 -right-16 w-64 h-64 cursor-pointer"
             variants={imageVariants}
             transition={{ delay: 0.8 }}
           >
@@ -70,7 +70,7 @@ export default function MissionPage() {
               y: -5,
               filter: "brightness(1.05)",
             }}
-            className="absolute -bottom-32 -left-12 w-64 h-64 cursor-pointer"
+            className="absolute -bottom-32 -left-6 w-64 h-64 cursor-pointer"
             variants={imageVariants}
             transition={{ delay: 1.1 }}
           >
@@ -84,7 +84,7 @@ export default function MissionPage() {
 
           {/* Stacked Notification Center — Vertical - Added delay */}
           <motion.div
-            className="absolute top-1/2 left-2/3 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center w-40"
+            className="absolute top-1/2 left-4/5 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center w-40"
             variants={containerVariants}
             transition={{ delay: 1.4 }}
           >
