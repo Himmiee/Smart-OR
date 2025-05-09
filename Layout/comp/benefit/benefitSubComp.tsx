@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { BenefitsHeroSlideShowItems } from "@/Providers/data/data";
 import { CardContainer } from "@/Layout/cards/CardContainer";
-
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 export const BenefitSubComponent: any = () => {
   const [current, setCurrent] = useState(0);
@@ -18,6 +18,19 @@ export const BenefitSubComponent: any = () => {
     }, delay);
     return () => clearInterval(interval);
   }, [current]);
+
+  const handleArrowClick = (direction: "left" | "right") => {
+    setPrevious(current);
+    if (direction === "left") {
+      setCurrent(
+        (prev) =>
+          (prev - 1 + BenefitsHeroSlideShowItems.length) %
+          BenefitsHeroSlideShowItems.length
+      );
+    } else {
+      setCurrent((prev) => (prev + 1) % BenefitsHeroSlideShowItems.length);
+    }
+  };
 
   return (
     <div className="relative h-[650px] w-full overflow-hidden flex justify-center items-center">
@@ -65,6 +78,31 @@ export const BenefitSubComponent: any = () => {
           </CardContainer>
         </motion.div>
       </AnimatePresence>
+
+      {/* Left Arrow */}
+
+      <motion.div
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+        onClick={() => handleArrowClick("left")}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <div className="flex items-center justify-center w-10 h-10 backdrop-blur-sm border-[1px] cursor-pointer border-white text-white rounded-full">
+          <RiArrowLeftSLine size={24} />
+        </div>
+      </motion.div>
+
+      {/* Right Arrow */}
+      <motion.div
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+        onClick={() => handleArrowClick("right")}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <div className="flex items-center justify-center w-10 h-10 backdrop-blur-sm border-[1px] cursor-pointer border-white text-white rounded-full">
+          <RiArrowRightSLine size={24} />
+        </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -7,6 +6,8 @@ import { HomeHeroSlideShowItems } from "@/Providers/data/data";
 import { CardContainer } from "@/Layout/cards/CardContainer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CreditCard } from "lucide-react";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+
 
 export const HomeHero: any = () => {
   const [current, setCurrent] = useState(0);
@@ -24,6 +25,20 @@ export const HomeHero: any = () => {
   const handleDotClick = (index: number) => {
     setPrevious(current);
     setCurrent(index);
+  };
+
+  const handlePrevClick = () => {
+    setPrevious(current);
+    setCurrent(
+      (prev) =>
+        (prev - 1 + HomeHeroSlideShowItems.length) %
+        HomeHeroSlideShowItems.length
+    );
+  };
+
+  const handleNextClick = () => {
+    setPrevious(current);
+    setCurrent((prev) => (prev + 1) % HomeHeroSlideShowItems.length);
   };
 
   return (
@@ -112,6 +127,22 @@ export const HomeHero: any = () => {
           </CardContainer>
         </motion.div>
       </AnimatePresence>
+
+      {/* Bottom Arrow Navigation */}
+      <div className="absolute bottom-5 left-5 right-5 flex justify-between">
+        <div
+          onClick={handlePrevClick}
+          className="flex items-center justify-center w-10 h-10 backdrop-blur-sm border-[1px] cursor-pointer border-white text-white rounded-full"
+        >
+          <RiArrowLeftSLine size={24} />
+        </div>
+        <div
+          onClick={handleNextClick}
+          className="flex items-center justify-center w-10 h-10 backdrop-blur-sm border-[1px] cursor-pointer border-white text-white rounded-full"
+        >
+          <RiArrowRightSLine size={24} />
+        </div>
+      </div>
     </div>
   );
 };

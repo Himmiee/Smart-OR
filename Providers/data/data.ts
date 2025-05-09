@@ -138,13 +138,6 @@ export const PeopleData = [
 
 export const BenefitsHeroSlideShowItems = [
   {
-    img: slideImg,
-    heroText: "Your First Car with Credit",
-    btnText: "Get Started",
-    description:
-      "We’ve partnered with Autochek to make your first car purchase as easy as it should be. Own a car for as little as ₦100,000, spread conveniently over 3 years.",
-  },
-  {
     img: slideImgTwo,
     heroText: "Power Up with Solar",
     btnText: "Get Started",
@@ -157,6 +150,13 @@ export const BenefitsHeroSlideShowItems = [
     btnText: "Get Started",
     description:
       "Need a new phone, laptop, or work device? Get access to the latest gadgets and spread payments over 6–12 months—powered by verified tech retailers.",
+  },
+  {
+    img: slideImg,
+    heroText: "Your First Car with Credit",
+    btnText: "Get Started",
+    description:
+      "We’ve partnered with Autochek to make your first car purchase as easy as it should be. Own a car for as little as ₦100,000, spread conveniently over 3 years.",
   },
   {
     img: slideImgFour,
