@@ -32,10 +32,11 @@ import TestimonialImgTwo from "@/public/testimonial/testimonial-two.png";
 import NordImg from "@/public/news/nord.png";
 import AccionImg from "@/public/news/accion.png";
 import MobilityImg from "@/public/news/mobility.png";
-
-
-
-
+import RandEllipseOne from "@/public/ellipse/ellipse-five.png";
+import RandEllipseTwo from "@/public/ellipse/ellipse-two.png";
+import RandEllipseThree from "@/public/ellipse/ellipse-one.png";
+import RandEllipseFour from "@/public/ellipse/eliipse-four.png";
+import RandEllipseFive from "@/public/ellipse/ellipse-three.png";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -259,4 +260,41 @@ export const NewsData = [
     description: "Pre-qualification/expression of interest (EOI)",
     date: "Apr 30 2025",
   },
+];
+export const footerData = [
+  {
+    title: "Organization",
+    links: ["About Us", "Our Team", "Careers", "Contact Us"],
+  },
+  {
+    title: "Resources",
+    links: [
+      "How To Apply For Credit",
+      "Check Your Credit Score",
+      "Financial Literacy",
+      "News & Updates",
+      "FAQs",
+    ],
+  },
+  {
+    title: "Institutions & Programs",
+    links: [
+      "Financial Institutions",
+      "Government Initiatives",
+      "Credit Infrastructure",
+      "C.A.L.M Fund",
+      "S.C.A.L.E Fund",
+    ],
+  },
+  {
+    title: "Stay Connected",
+    links: ["Partner With Us", "Support Our Mission", "News & Events"],
+  },
+];
+export const Ellipse = [
+  RandEllipseOne,
+  RandEllipseTwo,
+  RandEllipseThree,
+  RandEllipseFour,
+  RandEllipseFive,
 ];
