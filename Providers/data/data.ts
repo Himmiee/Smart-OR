@@ -27,6 +27,15 @@ import AlternativeBankImg from "@/public/banks/alernative.png";
 // import WemaBankImg from "@/public/banks/wema.png";
 import StanbicBankImg from "@/public/banks/stanbix.png";
 import LetsBankImg from "@/public/banks/letshego.png";
+import TestimonialImgOne from "@/public/testimonial/testimonial-one.jpg";
+import TestimonialImgTwo from "@/public/testimonial/testimonial-two.png";
+import NordImg from "@/public/news/nord.png";
+import AccionImg from "@/public/news/accion.png";
+import MobilityImg from "@/public/news/mobility.png";
+
+
+
+
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -211,4 +220,43 @@ export const BankImg = [
   StanbicBankImg,
   AlternativeBankImg,
   LetsBankImg,
+];
+
+export const TestimonialData = [
+  {
+    img: TestimonialImgOne,
+    text: "I used to struggle to get small business loans. CREDICORP made it simple, and now my shop is thriving",
+    name: "Fatima A. ",
+    role: "Entrepreneur",
+  },
+  {
+    img: TestimonialImgTwo,
+    text: "In the heart of Nigeria, credit is the lifeblood of entrepreneurship. It fuels ambition and fosters growth in every community.",
+    name: "Olanike Kolawole",
+    role: "Executive Director (Operations)",
+  },
+];
+
+export const NewsData = [
+  {
+    img: MobilityImg,
+    text: "Mobility Expansion",
+    btnText: "Read more",
+    description: "Pre-qualification/expression of interest (EOI)",
+    date: "Apr 30 2025",
+  },
+  {
+    img: AccionImg,
+    text: "Accion Partnership",
+    btnText: "Read more",
+    description: "Pre-qualification/expression of interest (EOI)",
+    date: "Apr 30 2025",
+  },
+  {
+    img: NordImg,
+    text: "Nord Automobile Partnership",
+    btnText: "Read more",
+    description: "Pre-qualification/expression of interest (EOI)",
+    date: "Apr 30 2025",
+  },
 ];

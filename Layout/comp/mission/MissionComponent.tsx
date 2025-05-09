@@ -10,7 +10,7 @@ export const MissionSubComponent = () => {
           OUR MISSION
         </p>
         <div className="text-[#2D2F31] max-w-2xl">
-          <p className="text-4xl md:text-6xl font-bold leading-snug">
+          <p className="text-4xl md:text-[50px] font-bold leading-snug">
             Leading the Charge for Financial Inclusion
           </p>
           <p className="mt-4 text-lg">

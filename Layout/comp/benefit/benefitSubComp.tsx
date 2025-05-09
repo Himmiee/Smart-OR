@@ -48,7 +48,7 @@ export const BenefitSubComponent: any = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <div className="justify-center items-center flex flex-col space-y-4">
-                  <h1 className="text-[30px] md:text-4xl lg:text-[60px] text-[#fff] text-center font-bold leading-tight">
+                  <h1 className="text-[30px] md:text-4xl lg:text-[50px] text-[#fff] text-center font-bold leading-tight">
                     {BenefitsHeroSlideShowItems[current].heroText}{" "}
                     <span className="text-[#FFF] block mt-1"></span>
                   </h1>

@@ -6,7 +6,7 @@ import { BenefitData } from "@/Providers/data/data";
 export const BenefitsPage = () => {
   return (
     <section className="py-12 ">
-      <div className="space-y-12 lg:space-y-24">
+      <div className="space-y-12 lg:space-y-16">
         <div className="flex justify-center items-center">
           <FormHeader
             pillText="BENEFITS"
@@ -16,7 +16,7 @@ export const BenefitsPage = () => {
           />
         </div>
 
-        <div className="flex lg:mt-24 bg-amber-300">
+        <div className="flex  bg-amber-300">
           <BenefitSubComponent />
         </div>
         <div className=" flex justify-center items-center px-6 ">

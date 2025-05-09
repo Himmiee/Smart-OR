@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CredicorpLogo from "@/public/logo-asset/credicorp-logo.png";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -12,13 +12,34 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < lastScrollY) {
+        setShowNavbar(true); 
+      } else {
+        setShowNavbar(false); 
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
     <nav
-      className={`absolute top-0 left-0 w-full ${bgColor} pt-6 pb-4 z-50 backdrop-blur-sm bg-white/30`}
+      className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${bgColor} pt-6 pb-4 backdrop-blur-sm bg-white/30 ${
+        showNavbar ? "translate-y-0" : "-translate-y-full"
+      }`}
     >
-      <div className="container flex justify-between items-center max-w-screen-xl mx-auto px-4 md:px-0">
-        {/* Logo */}
+      <div className="container flex justify-between items-center max-w-screen-xl mx-auto px-6">
         <Image src={CredicorpLogo} alt="logo" className="w-40 lg:w-48" />
 
         {/* Desktop Nav */}
