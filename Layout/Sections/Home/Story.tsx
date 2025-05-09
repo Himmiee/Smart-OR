@@ -1,4 +1,3 @@
-//def coming back here hmm
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -17,10 +16,10 @@ interface AvatarProps {
 
 interface AvatarCircleProps {}
 
-// Avatar component
 const Avatar = ({ src, index, total, radius, size }: AvatarProps) => {
-  // Calculate position on circle with additional spacing (angle adjustment)
-  const angle = (index / total) * Math.PI * 2;
+  // Calculate position on circle with added randomness to the angle
+  const randomOffset = Math.random() * 0.2 - 0.1; // Random offset between -0.1 and 0.1 (about 10% variance)
+  const angle = (index / total) * Math.PI * 2 + randomOffset; // Adjusted angle with randomness
   const x = Math.cos(angle) * radius;
   const y = Math.sin(angle) * radius;
 
@@ -43,7 +42,7 @@ const Avatar = ({ src, index, total, radius, size }: AvatarProps) => {
         <Image
           src={src || avatarPlaceholder}
           alt={`Team member ${index + 1}`}
-          className="w-full h-full object-cover opacity-15 md:opacity-100"
+          className="w-full h-full object-cover opacity-15 "
           width={size}
           height={size}
         />
@@ -129,7 +128,7 @@ export const AvatarCircle = ({}: AvatarCircleProps) => {
           </motion.div>
         )}
 
-        {/* Inner Circle - Top and Bottom Oscillation */}
+        {/* Inner Circle */}
         <motion.div
           className="absolute"
           initial={{ rotate: 0, opacity: 0 }}
@@ -159,7 +158,7 @@ export const AvatarCircle = ({}: AvatarCircleProps) => {
           ))}
         </motion.div>
 
-        {/* Outer Circle - Top and Bottom Oscillation */}
+        {/* Outer Circle */}
         <motion.div
           className="absolute"
           initial={{ rotate: 0, opacity: 0 }}

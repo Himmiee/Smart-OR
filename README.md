@@ -1,38 +1,181 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Welcome to credicorp-web 👋</h1>
 
-## Getting Started
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-First, run the development server:
+> Credicorp – A modern web application built with Next.js, Tailwind CSS, shadcn/ui, and React Hook Form.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Lucide Icons](https://lucide.dev/)
+
+---
+
+## 📁 Folder Structure
+
+```
+├── .gitignore
+├── Layout/
+│  ├── Footer.tsx
+│  ├── Navbar.tsx
+│  ├── Sections/
+│  │  ├── Home/
+│  │  │  ├── Benefits.tsx
+│  │  │  ├── Hero.tsx
+│  │  │  ├── HowItWorks.tsx
+│  │  │  ├── Mission.tsx
+│  │  │  ├── News.tsx
+│  │  │  ├── Partners.tsx
+│  │  │  ├── Server.tsx
+│  │  │  ├── Story.tsx
+│  │  │  ├── Testimonial.tsx
+│  ├── cards/
+│  │  ├── CardContainer.tsx
+│  │  ├── GridSystemCards.tsx
+│  │  ├── PeopleCard.tsx
+│  │  ├── ServiceCard.tsx
+│  ├── carousel.tsx
+│  ├── comp/
+│  │  ├── benefit/
+│  │  │  ├── benefitSubComp.tsx
+│  │  ├── mission/
+│  │  │  ├── MissionComponent.tsx
+│  ├── step/
+│  │  ├── step.tsx
+│  ├── typo/
+│  │  ├── formheader.tsx
+│  ├── variants/
+│  │  ├── MissionVariants.ts
+├── Providers/
+│  ├── Data/
+│  │  ├── data.tsx
+│  ├── Query/
+│  │  ├── QueryProvider.tsx
+│  ├── data/
+│  │  ├── data.ts
+│  ├── query/
+│  │  ├── QProvider.tsx
+├── README.md
+├── app/
+│  ├── (pages)/
+│  │  ├── (home)/
+│  │  │  ├── page.tsx
+│  │  ├── layout.tsx
+│  ├── globals.css
+│  ├── layout.tsx
+├── components/
+│  ├── ui/
+│  │  ├── button.tsx
+│  │  ├── carousel.tsx
+│  │  ├── checkbox.tsx
+│  │  ├── input.tsx
+│  │  ├── label.tsx
+│  │  ├── textarea.tsx
+├── components.json
+├── eslint.config.mjs
+├── generate-readme.js
+├── lib/
+│  ├── utils.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public/
+│  ├── banks/
+│  │  ├── alernative.png
+│  │  ├── fewchore.png
+│  │  ├── fidelity.png
+│  │  ├── letshego.png
+│  │  ├── optimus.png
+│  │  ├── renmoney.png
+│  │  ├── stanbix.png
+│  │  ├── wema.png
+│  ├── ellipse/
+│  │  ├── eliipse-four.png
+│  │  ├── ellipse-five.png
+│  │  ├── ellipse-one.png
+│  │  ├── ellipse-three.png
+│  │  ├── ellipse-two.png
+│  ├── file.svg
+│  ├── globe.svg
+│  ├── hero/
+│  │  ├── hero-image-five.png
+│  │  ├── hero-img-four.png
+│  │  ├── hero-img-one.png
+│  │  ├── hero-img-three.png
+│  │  ├── hero-img-two.png
+│  ├── logo-asset/
+│  │  ├── credicorp-logo.png
+│  │  ├── footer-logo.png
+│  ├── news/
+│  │  ├── accion.png
+│  │  ├── mobility.png
+│  │  ├── nord.png
+│  ├── next.svg
+│  ├── slide-img/
+│  │  ├── img-five.png
+│  │  ├── img-four.png
+│  │  ├── img-one.png
+│  │  ├── img-three.png
+│  │  ├── img-two.png
+│  ├── sub/
+│  │  ├── Container.png
+│  │  ├── Footer.png
+│  │  ├── Group.png
+│  │  ├── Item.png
+│  │  ├── Notification Container.png
+│  │  ├── Notification.png
+│  │  ├── benefits/
+│  │  │  ├── four-img.png
+│  │  │  ├── one-img.png
+│  │  │  ├── three-img.png
+│  │  │  ├── two-img.png
+│  │  ├── consumers.png
+│  │  ├── credit-card-svgrepo-com.png
+│  │  ├── file-3-svgrepo-com 1.png
+│  │  ├── financial.png
+│  │  ├── howitworks.png
+│  │  ├── light-bulb-svgrepo-com 1.png
+│  │  ├── mission.png
+│  │  ├── vendors.png
+│  ├── testimonial/
+│  │  ├── testimonial-one.jpg
+│  │  ├── testimonial-two.png
+│  ├── vercel.svg
+│  ├── window.svg
+├── tsconfig.json
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+Visit `http://localhost:3000` to view the app.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧪 Useful Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev       # Start dev server
+npm run build     # Build for production
+npm run lint      # Run ESLint
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# credi
-# Credicorp-next
