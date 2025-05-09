@@ -10,20 +10,20 @@ export const BenefitsPage = () => {
   return (
     <section className="py-12 relative">
       {/* Absolute positioned images */}
-      <div className="absolute top-0 right-0 w-32 h-32 z-10 rotate-180">
+      <div className="absolute top-0 right-0 w-32 h-32 z-10 rotate-90">
         <Image
           src={topRightImg}
           alt="Top Right"
-          width={400} 
+          width={400}
           height={400}
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-0 left-0 w-32 h-32 z-10">
+      <div className="absolute bottom-0 left-0 w-32 h-32 z-10 -rotate-90">
         <Image
           src={bottomLeftImg}
           alt="Bottom Left"
-          width={400} 
+          width={400}
           height={400}
           className="object-contain"
         />
