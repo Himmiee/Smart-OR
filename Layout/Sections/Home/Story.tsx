@@ -104,7 +104,7 @@ export const AvatarCircle = ({}: AvatarCircleProps) => {
   const { circleRadiusInner, circleRadiusOuter, avatarSize } = dimensions;
 
   return (
-    <div className="w-full md:min-h-screen bg-[#F1F5F9] flex items-center justify-center overflow-hidden">
+    <div className="w-full lg:min-h-screen bg-[#F1F5F9] flex items-center justify-center overflow-hidden">
       <div className="relative w-full max-w-4xl h-screen max-h-[600px] flex items-center justify-center">
         {/* Initial center avatar */}
         {isInitialState && (

@@ -2,7 +2,6 @@
 
 import Image, { StaticImageData } from "next/image";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { BsArrowLeft } from "react-icons/bs";
 
 interface CardProps {
@@ -39,20 +38,18 @@ export const CardComponent: React.FC<CardProps> = ({
         <p className="text-sm text-gray-600">{description}</p>
 
         <div className="flex items-center justify-start">
-          <Button
+          <div
             onClick={onClick}
-            className="bg-white text-[color:var(--green-brand)] shadow-none cursor-pointer hover:bg-gray-100 px-4 py-2 text-sm flex items-center"
+            className="bg-white text-[color:var(--green-brand)] shadow-none cursor-pointer hover:underline  py-2 text-sm flex items-center"
           >
             {buttonText}
             <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-
 
 interface NewsCardProps {
   img: StaticImageData;
@@ -70,7 +67,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({
   btnText,
 }) => {
   return (
-    <div className="rounded-xl overflow-hidden  transition flex flex-col h-[400px] ">
+    <div className="rounded-xl overflow-hidden  transition flex flex-col h-[400px] cursor-pointer ">
       {/* Image */}
       <div className="w-full h-52 relative">
         <Image

@@ -20,7 +20,7 @@ export const FormHeader = ({
     : "items-center text-center max-w-xl";
 
   return (
-    <section className={`flex flex-col justify-center ${alignment}`}>
+    <section className={`flex flex-col justify-center px-6 md:px-0 ${alignment}`}>
       {showPill && (
         <div
           className={`${
