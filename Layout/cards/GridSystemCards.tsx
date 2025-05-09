@@ -51,6 +51,8 @@ export const CardComponent: React.FC<CardProps> = ({
   );
 };
 
+
+
 interface NewsCardProps {
   img: StaticImageData;
   date: string;

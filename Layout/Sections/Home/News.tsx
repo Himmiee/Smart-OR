@@ -6,7 +6,7 @@ import { NewsData } from "@/Providers/data/data";
 
 export const NewsPage = () => {
   return (
-    <section className="py-12 space-y-12 max-w-screen-xl mx-auto">
+    <section className="py-12 space-y-12 px-6 md:px-0 max-w-screen-xl mx-auto">
       <div className="flex justify-center items-center">
         <FormHeader
           pillText=""
@@ -15,7 +15,7 @@ export const NewsPage = () => {
           showPill={false}
         />
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-">
         {NewsData.map((news, index) => (
           <NewsCard key={index} {...news} />
         ))}
