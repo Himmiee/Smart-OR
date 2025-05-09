@@ -42,7 +42,7 @@ export const HomeHero: any = () => {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-[70vh] lg:h-screen w-full overflow-hidden">
       {/* Keep previous slide visible underneath */}
       <div className="absolute top-0 left-0 w-full h-full">
         <CardContainer bgImage={HomeHeroSlideShowItems[previous].img.src}>
