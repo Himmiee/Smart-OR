@@ -10,7 +10,7 @@ export const BenefitsPage = () => {
   return (
     <section className="py-12 relative">
       {/* Absolute positioned images */}
-      <div className="absolute top-0 right-0 w-32 h-32 z-10 rotate-90">
+      <div className="absolute top-0 right-0 w-32 h-32 z-10 hidden lg:block rotate-90">
         <Image
           src={topRightImg}
           alt="Top Right"
@@ -19,7 +19,7 @@ export const BenefitsPage = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-0 left-0 w-32 h-32 z-10 -rotate-90">
+      <div className="absolute bottom-0 left-0 w-32 h-32 z-10 hidden lg:block -rotate-90">
         <Image
           src={bottomLeftImg}
           alt="Bottom Left"
