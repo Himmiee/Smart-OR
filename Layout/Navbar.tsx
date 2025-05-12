@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
   bgColor: string;
-  textColor?: string; 
+  textColor?: string;
   navItems: { label: string; href: string }[];
 }
 
@@ -62,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         <div className="hidden lg:flex space-x-3 ml-6">
-          <Button variant="outline" size="lg">
+          <Button variant="outline" className={textColor} size="lg">
             Login
           </Button>
           <Button variant="secondary" size="lg">
@@ -98,7 +98,11 @@ const Navbar: React.FC<NavbarProps> = ({
             </a>
           ))}
           <div className="flex flex-col space-y-3 pt-2">
-            <Button variant="outline" size="lg" className="w-full">
+            <Button
+              variant="outline"
+              size="lg"
+              className={`${textColor} w-full`}
+            >
               Login
             </Button>
             <Button variant="secondary" size="lg" className="w-full">

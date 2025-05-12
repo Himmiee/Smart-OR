@@ -51,7 +51,9 @@ export const PartnersPage = () => {
                   <Image
                     src={bankImg}
                     alt={`Bank ${index}`}
-                    className="max-w-full"
+                    className="max-w-"
+                    width={200}
+                    height={200}
                   />
                 </div>
               </SwiperSlide>

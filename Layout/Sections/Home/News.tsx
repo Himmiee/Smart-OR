@@ -15,7 +15,7 @@ export const NewsPage = () => {
           showPill={false}
         />
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-0">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-12">
         {NewsData.map((news, index) => (
           <NewsCard key={index} {...news} />
         ))}

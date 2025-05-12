@@ -24,7 +24,7 @@ import FewtureBankImg from "@/public/banks/fewchore.png";
 import RenMoneyBankImg from "@/public/banks/renmoney.png";
 import OptimusBankImg from "@/public/banks/optimus.png";
 import AlternativeBankImg from "@/public/banks/alernative.png";
-// import WemaBankImg from "@/public/banks/wema.png";
+import WemaBankImg from "@/public/banks/wema.png";
 import StanbicBankImg from "@/public/banks/stanbix.png";
 import LetsBankImg from "@/public/banks/letshego.png";
 import TestimonialImgOne from "@/public/testimonial/testimonial-one.jpg";
@@ -234,6 +234,7 @@ export const BankImg = [
   FidelityBankImg,
   OptimusBankImg,
   FewtureBankImg,
+  WemaBankImg,
   RenMoneyBankImg,
   StanbicBankImg,
   AlternativeBankImg,

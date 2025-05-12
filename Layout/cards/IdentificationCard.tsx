@@ -15,7 +15,7 @@ export const IdentitficationCard: React.FC<IdentificationCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:space-x-4 px-6 md:p-4 bg-white py-8 md:max-w-4xl mx-auto gap-x-4 lg:gap-x-14">
+    <div className="flex flex-col md:flex-row items-center md:space-x-4 px-6 md:px-6 md:p-4 bg-white py-8 md:max-w-4xl mx-auto gap-x-4 lg:gap-x-14">
       <div className="relative flex-shrink-0">
         <Image
           src={imageUrl}
