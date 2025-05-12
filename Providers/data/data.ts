@@ -37,6 +37,12 @@ import RandEllipseTwo from "@/public/ellipse/ellipse-two.png";
 import RandEllipseThree from "@/public/ellipse/ellipse-one.png";
 import RandEllipseFour from "@/public/ellipse/eliipse-four.png";
 import RandEllipseFive from "@/public/ellipse/ellipse-three.png";
+import OfferImgHouse from "@/public/offer-slide/house-svgrepo-com 1.png";
+import OfferImgCar from "@/public/offer-slide/car-svgrepo-com 1.png";
+import OfferImgcreditCard from "@/public/offer-slide/credit-card-svgrepo-com 1.png";
+import OfferImgBook from "@/public/offer-slide/book-closed-svgrepo-com (1).png";
+import OfferImgShop from "@/public/offer-slide/shop-svgrepo-com 1.png";
+import OfferImgMac from "@/public/offer-slide/macbook-pro-svgrepo-com.png";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -291,10 +297,35 @@ export const footerData = [
     links: ["Partner With Us", "Support Our Mission", "News & Events"],
   },
 ];
+
 export const Ellipse = [
   RandEllipseOne,
   RandEllipseTwo,
   RandEllipseThree,
   RandEllipseFour,
   RandEllipseFive,
+];
+
+export const offerData = [
+  { text: "Get your first car with Credicorp", img: OfferImgCar },
+  {
+    text: "24/7 access to credit loans with Credicorp",
+    img: OfferImgcreditCard,
+  },
+  {
+    text: "Grow your business today with Credicorp",
+    img: OfferImgShop,
+  },
+  {
+    text: "Access school fees credit when you need it",
+    img: OfferImgBook,
+  },
+  {
+    text: "Upgrade your tech—get the latest devices with Credicorp",
+    img: OfferImgMac,
+  },
+  {
+    text: "Turn your rent into ownership with Credicorp",
+    img: OfferImgHouse,
+  },
 ];

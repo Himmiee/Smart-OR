@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${bgColor} pt-6 pb-4 backdrop-blur-sm bg-white/30 ${
+      className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${bgColor} pt-6 pb-4 backdrop-blur-sm ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
