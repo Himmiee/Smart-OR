@@ -82,7 +82,7 @@ export const BenefitSubComponent: any = () => {
       {/* Left Arrow */}
 
       <motion.div
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+        className="absolute left-4 bottom-8 md:top-1/2 transform -translate-y-1/2 cursor-pointer"
         onClick={() => handleArrowClick("left")}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
@@ -94,7 +94,7 @@ export const BenefitSubComponent: any = () => {
 
       {/* Right Arrow */}
       <motion.div
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+        className="absolute right-4 bottom-8 md:top-1/2 transform -translate-y-1/2 cursor-pointer"
         onClick={() => handleArrowClick("right")}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}

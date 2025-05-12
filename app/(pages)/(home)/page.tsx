@@ -13,6 +13,7 @@ import { OurServicePage } from "@/Layout/Sections/Home/Server";
 import { AvatarCircle } from "@/Layout/Sections/Home/Story";
 import { TestimonialPage } from "@/Layout/Sections/Home/Testimonial";
 import Loader from "@/Layout/Sections/Home/Loader";
+import { OffersPage } from "@/Layout/Sections/Home/Offers";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -78,6 +79,9 @@ export default function HomePage() {
         <section>
           <section>
             <HomeHero />
+          </section>
+          <section>
+            <OffersPage />
           </section>
           <AnimatedSection animation={animations.missionAnimation}>
             <MissionPage />
