@@ -7,7 +7,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navbarBgColor = "bg-transparent backdrop-blur-sm";
+  const navbarBgColor = "bg-black/10";
 
   return (
     <html lang="en">
