@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import CredicorpLogo from "@/public/logo-asset/credicorp-logo.png";
@@ -7,10 +8,15 @@ import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
   bgColor: string;
+  textColor?: string; 
   navItems: { label: string; href: string }[];
 }
 
-const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
+const Navbar: React.FC<NavbarProps> = ({
+  bgColor,
+  textColor = "text-white",
+  navItems,
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -20,9 +26,9 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY < lastScrollY) {
-        setShowNavbar(true); 
+        setShowNavbar(true);
       } else {
-        setShowNavbar(false); 
+        setShowNavbar(false);
       }
 
       setLastScrollY(currentScrollY);
@@ -47,13 +53,14 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
           <ul className="flex space-x-6">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href} className="text-white hover:text-white/80">
+                <a href={item.href} className={`${textColor} hover:opacity-80`}>
                   {item.label}
                 </a>
               </li>
             ))}
           </ul>
         </div>
+
         <div className="hidden lg:flex space-x-3 ml-6">
           <Button variant="outline" size="lg">
             Login
@@ -70,9 +77,9 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
             aria-label="Toggle Menu"
           >
             {menuOpen ? (
-              <X className="text-white" />
+              <X className={textColor} />
             ) : (
-              <Menu className="text-white" />
+              <Menu className={textColor} />
             )}
           </button>
         </div>
@@ -85,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor, navItems }) => {
             <a
               key={index}
               href={item.href}
-              className="block text-white hover:text-white/80"
+              className={`block ${textColor} hover:opacity-80`}
             >
               {item.label}
             </a>

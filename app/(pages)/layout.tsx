@@ -14,11 +14,16 @@ export default function RootLayout({
 
   const navbarBgColor =
     pathname === "/" ? "bg-transparent backdrop-blur-sm" : "bg-white shadow-sm";
+  const textColor = pathname === "/" ? "text-white" : "text-black";
 
   return (
     <html lang="en">
       <body className="bg-transparent antialiased relative">
-        <Navbar bgColor={navbarBgColor} navItems={navItems} />
+        <Navbar
+          bgColor={navbarBgColor}
+          textColor={textColor}
+          navItems={navItems}
+        />
         <main>{children}</main>
         <Footer />
       </body>

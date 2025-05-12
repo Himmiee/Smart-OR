@@ -43,6 +43,17 @@ import OfferImgcreditCard from "@/public/offer-slide/credit-card-svgrepo-com 1.p
 import OfferImgBook from "@/public/offer-slide/book-closed-svgrepo-com (1).png";
 import OfferImgShop from "@/public/offer-slide/shop-svgrepo-com 1.png";
 import OfferImgMac from "@/public/offer-slide/macbook-pro-svgrepo-com.png";
+import NimcImg from "@/public/about/gov/nimc.png";
+import NimImg from "@/public/about/gov/nic.png";
+import FircImg from "@/public/about/gov/firc.png";
+import COAImg from "@/public/about/gov/coa.png";
+import BoiImg from "@/public/about/gov/boi.png";
+import FccpcImg from "@/public/about/gov/fccpc.png";
+import MofiImg from "@/public/about/gov/mofi.png";
+import AboutNameOtunba from "@/public/about/about-names/otunba.png";
+import AboutNameAisha from "@/public/about/about-names/aisha.png";
+import AboutNameUzoma from "@/public/about/about-names/uzoma.png";
+import AboutNameOlanike from "@/public/about/about-names/olanike.png";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -327,5 +338,45 @@ export const offerData = [
   {
     text: "Turn your rent into ownership with Credicorp",
     img: OfferImgHouse,
+  },
+];
+
+export const AboutGovImg = [
+  MofiImg,
+  NimcImg,
+  NimImg,
+  FircImg,
+  COAImg,
+  BoiImg,
+  FccpcImg,
+];
+export const IdentificationData = [
+  {
+    name: "Otunba Aderemi Abdul",
+    title: "Chairman",
+    quote:
+      "In Nigeria, credit is not just a financial tool; it's a bridge to dreams and aspirations. Trust in the process, and the rewards will follow.",
+    imageUrl: AboutNameOtunba,
+  },
+  {
+    name: "Uzoma Nwagba",
+    title: "Managing Director/Chief Executive Officer",
+    quote:
+      "Believing in credit is believing in the future. In Nigeria, every loan is a step towards progress and innovation.",
+    imageUrl: AboutNameUzoma,
+  },
+  {
+    name: "Olanike Kolawole",
+    title: "Executive Director (Operations)",
+    quote:
+      "In the heart of Nigeria, credit is the lifeblood of entrepreneurship. It fuels ambition and fosters growth in every community.",
+    imageUrl: AboutNameOlanike,
+  },
+  {
+    name: "Aisha Abdullahi",
+    title: "Executive Director (Credit & Portfolio Management)",
+    quote:
+      "Credit in Nigeria is a testament to resilience. It empowers individuals to turn their visions into reality, one investment at a time.",
+    imageUrl: AboutNameAisha,
   },
 ];

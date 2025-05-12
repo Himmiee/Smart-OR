@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { AnimatedSection } from "@/Layout/Sections/Animation";
-import { BenefitsPage } from "@/Layout/Sections/Home/Benefits";
+// import { BenefitsPage } from "@/Layout/Sections/Home/Benefits";
 import { HomeHero } from "@/Layout/Sections/Home/Hero";
 import { HowItWorksPage } from "@/Layout/Sections/Home/HowItWorks";
 import MissionPage from "@/Layout/Sections/Home/Mission";
@@ -89,9 +89,9 @@ export default function HomePage() {
           <AnimatedSection animation={animations.serviceAnimation}>
             <OurServicePage />
           </AnimatedSection>
-          <section>
+          {/* <section>
             <BenefitsPage />
-          </section>
+          </section> */}
           <AnimatedSection animation={animations.howItWorksAnimation}>
             <HowItWorksPage />
           </AnimatedSection>
