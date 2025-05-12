@@ -9,7 +9,7 @@ import { ArrowRight, CreditCard } from "lucide-react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 
-export const HomeHero: any = () => {
+export const HomeHero: React.FC = () => {
   const [current, setCurrent] = useState(0);
   const [previous, setPrevious] = useState(0);
   const delay = 10000;
