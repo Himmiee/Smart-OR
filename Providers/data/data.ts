@@ -54,15 +54,25 @@ import AboutNameOtunba from "@/public/about/about-names/otunba.png";
 import AboutNameAisha from "@/public/about/about-names/aisha.png";
 import AboutNameUzoma from "@/public/about/about-names/uzoma.png";
 import AboutNameOlanike from "@/public/about/about-names/olanike.png";
+import CollabImg from "@/public/calm/key/collab.png"
+import LeafImg from "@/public/calm/key/leaf.png";
+import AccessImg from "@/public/calm/key/access.png";
+import FinanceImg from "@/public/calm/key/finanace.png";
 
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Our Initiatives", href: "/initiatives" },
+  {
+    label: "Our Initiatives",
+    href: "/initiatives",
+    subItems: [
+      { label: "CALM Funds", href: "/initiatives/calm-funds" },
+      { label: "SCAL Funds", href: "/initiatives/scal-funds" },
+    ],
+  },
   { label: "Impact", href: "/impact" },
   { label: "Contact Us", href: "/contact" },
 ];
-
 export const HomeHeroSlideShowItems = [
   {
     img: HomeImgOne,
@@ -102,36 +112,34 @@ export const HomeHeroSlideShowItems = [
 ];
 
 export const defaultServiceItems = [
-  {
-    id: 1,
-    title: "Enabling Credit Access",
-    description:
-      "We link consumers with financial institutions to streamline credit.",
-    icon: imgOne,
-    bgColor: "bg-white",
-  },
+  // {
+  //   id: 1,
+  //   title: "Enabling Credit Access",
+  //   description:
+  //     "We link consumers with financial institutions to streamline credit.",
+  //   icon: imgOne,
+  //   bgColor: "bg-white",
+  // },
   {
     id: 2,
-    title: "Expanding Capital Access",
+    title: "Capital",
     description:
-      "We provide funding and guarantees for responsible credit growth.",
+      "Providing wholesale funding and credit guarantees to Financial Institutions committed to expanding consumer credit access today.",
     icon: imgTwo,
-    bgColor: "bg-white",
   },
   {
     id: 3,
-    title: "Cultural Re-orientation",
-    description: "We promote responsible credit use to improve lives.",
+    title: "Infrastructure",
+    description:
+      "Strengthening Nigeria’s consumer credit infrastructure, also ensuring every economically active citizen has a comprehensive credit score.",
     icon: imgThree,
-    bgColor: "bg-yellow-50",
   },
   {
     id: 4,
-    title: "Driving Policy & Innovation",
+    title: "Cultural Re-orientation",
     description:
-      "We collaborate with governments and businesses to enhance financial inclusion.",
+      "Helping Nigerians see credit as a tool to improve their lives, and guiding institutions on effective consumer credit underwriting as a path to growth.",
     icon: imgFour,
-    bgColor: "bg-yellow-50",
   },
 ];
 
@@ -379,5 +387,44 @@ export const IdentificationData = [
     quote:
       "Credit in Nigeria is a testament to resilience. It empowers individuals to turn their visions into reality, one investment at a time.",
     imageUrl: AboutNameAisha,
+  },
+];
+
+export const KeyFeatures = [
+  {
+    id: 1,
+    title: "Affordable Financing",
+    description:
+      "The CALM Fund provides loans for converting vehicles to CNG and installing solar energy, easing financial burdens.",
+    icon: FinanceImg,
+    bgColor: "bg-[#FFF441]",
+    borderColor: "white",
+  },
+  {
+    id: 2,
+    title: "Environmental Benefits",
+    description:
+      "The CALM Fund aids the shift to CNG and solar energy, promoting sustainability and lowering carbon emissions.",
+    icon: LeafImg,
+    bgColor: "bg-[#FFF441]",
+    borderColor: "white",
+  },
+  {
+    id: 3,
+    title: "Collaborative Effort",
+    description:
+      "This initiative is a collaboration between MOFI, CREDICORP, and Pi-CNG, pooling resources to tackle energy and transport issues.",
+    icon: CollabImg,
+    bgColor: "bg-[#FFF441]",
+    borderColor: "white",
+  },
+  {
+    id: 4,
+    title: "Easy Access",
+    description:
+      "The CALM Fund aims to ensure everyone has access to the funds they need to make their life greener.",
+    icon: AccessImg,
+    bgColor: "bg-[#FFF441]",
+    borderColor: "white",
   },
 ];

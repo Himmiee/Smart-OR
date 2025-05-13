@@ -34,10 +34,11 @@ export const MissionSubComponent = () => {
             Leading the Charge for Financial Inclusion
           </motion.p>
           <motion.p className="mt-4 text-lg" variants={missionTextVariants}>
-            We are transforming the way Nigerians access credit through
-            innovative technology, strategic partnerships, and policy advocacy.
-            Through our work, we empower Nigerians to access the financial
-            opportunities they deserve.
+            The Nigerian Consumer Credit Corporation (CREDICORP) is a
+            Development Finance Institution (DFI) of the Federal Government of
+            Nigeria, established with one mandate: To democratise access to
+            consumer credit for Nigeria’s working population. We achieve our
+            mandate via three pillars:
           </motion.p>
         </div>
       </div>
@@ -56,7 +57,6 @@ export const MissionSubComponent = () => {
               title={item.title}
               description={item.description}
               icon={item.icon}
-              bgColor={item.bgColor}
             />
           </motion.div>
         ))}

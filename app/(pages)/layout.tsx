@@ -13,12 +13,12 @@ export default function RootLayout({
   const pathname = usePathname();
 
   const navbarBgColor =
-    pathname === "/" ? "bg-transparent backdrop-blur-sm" : "bg-white shadow-sm";
+    pathname === "/" ? "bg-black/10 backdrop-blur-sm" : "bg-white shadow-sm";
   const textColor = pathname === "/" ? "text-white" : "text-black";
 
   return (
     <html lang="en">
-      <body className="bg-transparent antialiased relative">
+      <body className=" antialiased relative">
         <Navbar
           bgColor={navbarBgColor}
           textColor={textColor}
