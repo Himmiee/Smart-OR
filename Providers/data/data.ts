@@ -3,7 +3,7 @@ import HomeImgTwo from "@/public/hero/hero-img-two.png";
 import HomeImgThree from "@/public/hero/hero-img-three.png";
 import HomeImgFour from "@/public/hero/hero-img-four.png";
 import HomeImgFive from "@/public/hero/hero-image-five.png";
-import imgOne from "@/public/sub/credit-card-svgrepo-com.png";
+// import imgOne from "@/public/sub/credit-card-svgrepo-com.png";
 import imgTwo from "@/public/sub/file-3-svgrepo-com 1.png";
 import imgThree from "@/public/sub/light-bulb-svgrepo-com 1.png";
 import imgFour from "@/public/sub/Group.png";
@@ -67,7 +67,7 @@ export const navItems = [
     href: "/initiatives",
     subItems: [
       { label: "C.A.L.M Funds", href: "/initiatives/calm-funds" },
-      { label: "S.C.A.L.E Funds", href: "/initiatives/scale-funds" },
+      { label: "S.C.A.L.E", href: "/initiatives/scale-funds" },
     ],
   },
   { label: "Impact", href: "/impact" },

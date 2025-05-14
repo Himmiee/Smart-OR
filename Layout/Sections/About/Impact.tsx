@@ -2,24 +2,27 @@ import Image from "next/image";
 import bottomLeftImage from "@/public/about/hero/bg-left.png";
 import impactLogoImage from "@/public/about/hero/mini-logo.png";
 
-export const ImpactSection = () => {
+export const ImpactSection = ({ showLogo = true }: { showLogo?: boolean }) => {
   return (
     <section className="px-6 py-16 relative overflow-hidden bg-black">
-      <Image
-        src={bottomLeftImage}
-        alt="Background Pattern"
-        className="absolute -top-8 -left-6 z-0 rotate-180 opacity-60"
-        width={250}
-        height={250}
-      />
-      <Image
-        src={bottomLeftImage}
-        alt="Background Pattern"
-        className="absolute bottom-0 right-0 z-0"
-        width={250}
-        height={250}
-      />
-
+      {showLogo && (
+        <>
+          <Image
+            src={bottomLeftImage}
+            alt="Background Pattern"
+            className="absolute -top-8 -left-6 z-0 rotate-180 opacity-60"
+            width={250}
+            height={250}
+          />
+          <Image
+            src={bottomLeftImage}
+            alt="Background Pattern"
+            className="absolute bottom-0 right-0 z-0"
+            width={250}
+            height={250}
+          />
+        </>
+      )}
       <div className="relative z-10 text-white max-w-screen-xl mx-auto lg:px-12">
         <div className="relative mb-12">
           <Image
