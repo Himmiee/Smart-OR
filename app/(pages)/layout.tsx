@@ -24,7 +24,15 @@ export default function RootLayout({
           textColor={textColor}
           navItems={navItems}
         />
-        <main>{children}</main>
+        <main
+          className={`${
+            pathname === "/"
+              ? ""
+              : "lg:pt-22"
+          }`}
+        >
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

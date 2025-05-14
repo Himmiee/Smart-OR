@@ -1,11 +1,10 @@
-import Image from "next/image";
 import { FormHeader } from "@/Layout/typo/formheader";
 import cngCar from "@/public/calm/carr.png";
 import solarPanel from "@/public/calm/solar.png";
 import { Button } from "@/components/ui/button";
 import { WrapCard } from "@/Layout/cards/WrapCard";
 
-export const CalmBemefits = () => {
+export const CalmBenefits = () => {
   return (
     <section className="py-12 pb-16 px-4 md:px-6 bg-[#fff] max-w-screen-xl  mx-auto">
       <div className="space-y-14 text-center">

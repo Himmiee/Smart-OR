@@ -5,7 +5,7 @@ import HeroImg from "@/public/calm/calm.jpg";
 
 export const CalmHero: React.FC = () => {
   return (
-    <div className="relative h-[55vh] md:h-[700px]  w-full overflow-hidden">
+    <div className="relative h-[55vh] md:h-[650px]  w-full overflow-hidden">
       <CardContainer bgImage={HeroImg}>
         <div className="flex flex-row items-end justify-between h-full w-full px-4 md:px-12 ">
           {/* Text Content */}

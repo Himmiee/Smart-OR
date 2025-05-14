@@ -66,8 +66,8 @@ export const navItems = [
     label: "Our Initiatives",
     href: "/initiatives",
     subItems: [
-      { label: "CALM Funds", href: "/initiatives/calm-funds" },
-      { label: "SCAL Funds", href: "/initiatives/scal-funds" },
+      { label: "C.A.L.M Funds", href: "/initiatives/calm-funds" },
+      { label: "S.C.A.L.E Funds", href: "/initiatives/scale-funds" },
     ],
   },
   { label: "Impact", href: "/impact" },
