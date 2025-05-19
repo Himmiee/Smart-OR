@@ -70,7 +70,7 @@ export const navItems = [
       { label: "S.C.A.L.E", href: "/initiatives/scale-funds" },
     ],
   },
-  { label: "Impact", href: "/impact" },
+  // { label: "Impact", href: "/impact" },
   { label: "Contact Us", href: "/contact" },
 ];
 export const HomeHeroSlideShowItems = [
@@ -90,7 +90,7 @@ export const HomeHeroSlideShowItems = [
   },
   {
     img: HomeImgThree,
-    heroText: "Retire Comfortably",
+    heroText: "Upgrade Your Home",
     coloredText: "With Credit",
     description:
       "At CREDICORP, we make it easier for every Nigerian to access responsible credit, empowering you to do more, achieve more, and build lasting financial confidence.",
@@ -104,8 +104,8 @@ export const HomeHeroSlideShowItems = [
   },
   {
     img: HomeImgFive,
-    heroText: "Credit? It's Your Superpower,",
-    coloredText: "Not Your Kryptonite.",
+    heroText: "Credit? ",
+    coloredText: "It's Your Superpower",
     description:
       "Inflation is hitting hard, and waiting for 'someday' isn't an option. Credit can be your shield against rising costs and your start tp achieving your goals. Get the flexibility you need to fund your education, start that business, or access the tech you need to stay ahead. ",
   },
@@ -144,18 +144,18 @@ export const defaultServiceItems = [
 ];
 
 export const PeopleData = [
-  { name: "Obinna Chuckwu", role: "Canteen Owner at Unilag", img: personImg },
-  { name: "Adaeze Nwosu", role: "Shop Owner", img: personImgTwo },
-  { name: "Ify Uche", role: "Graphic Designer", img: personImgThree },
+  { name: "Ginika Amadi", role: "Canteen Owner at Unilag", img: personImg },
+  { name: "Mustapha Bello", role: "Shop Owner", img: personImgTwo },
+  { name: "Mayowa Adeyemi", role: "Graphic Designer", img: personImgThree },
   {
-    name: "Chinonso Okafor",
+    name: "Aminat Mubarakah",
     role: "Trader at Lagos Market",
     img: personImgFour,
   },
-  { name: "Emeka Rbe", role: "Store Manager", img: personImgFive },
+  { name: "Emeka Ibe", role: "Store Manager", img: personImgFive },
   { name: "Ify Uche", role: "Graphic Designer", img: personImgThree },
   {
-    name: "Chinonso Okafor",
+    name: "Chinaza Okafor",
     role: "Trader at Lagos Market",
     img: personImgFour,
   },

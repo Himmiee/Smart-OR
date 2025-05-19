@@ -4,10 +4,15 @@ import howitworksImg from "@/public/sub/howitworks.png";
 import { HIWData } from "@/Providers/data/data";
 import { StepItem } from "@/Layout/step/step";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
-export const HowItWorksPage = () => {
+export const HowItWorksPage = ({
+  bgColor = "bg-[#F6F2DA] py-12 pb-16",
+}: {
+  bgColor?: string;
+}) => {
   return (
-    <section className="py-12 pb-16 px-4 md:px-6  bg-[#F6F2DA]">
+    <section className={`${bgColor} px-4 md:px-6`}>
       <div className="space-y-14  mx-auto max-w-screen-xl ">
         <div className="flex justify-center items-center">
           <FormHeader
@@ -19,7 +24,11 @@ export const HowItWorksPage = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center w-full px-2 md:px-0 lg:w-[90%]  ">
+          <div
+            className={`${
+              bgColor ? " lg:w-[100%]  " : " lg:w-[100%]  "
+            } flex justify-center w-full px-2 md:px-0`}
+          >
             <Image
               src={howitworksImg}
               alt="How it works"
@@ -50,10 +59,12 @@ export const HowItWorksPage = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-black text-white  px-4 rounded-md flex items-center cursor-pointer w-fit gap-2 h-12 mt-2 md:mt-0">
-              Get Started
-              <ArrowRight size={18} />
-            </div>
+            <Link href="/credit" scroll>
+              <div className="bg-black text-white  px-4 rounded-md flex items-center cursor-pointer w-fit gap-2 h-12 mt-2 md:mt-0">
+                Get Started
+                <ArrowRight size={18} />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

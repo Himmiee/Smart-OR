@@ -11,7 +11,7 @@ export const AboutIdentificationSection = () => {
           passion for large-scale impact.{" "}
         </p>
       </div>
-      <div className="">
+      <div className="grid md:grid-cols-2 space-y-4">
         {IdentificationData.map((leader, index) => (
           <IdentitficationCard
             key={index}

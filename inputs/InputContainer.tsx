@@ -14,7 +14,7 @@ export const InputContainer = ({
       <Label className="">
         {label}
         {required && (
-          <sup className="text-red-500 text-base relative -top-[2px]  left-1">
+          <sup className="text-black text-base relative -top-[0px]  -left-1.5">
             *
           </sup>
         )}

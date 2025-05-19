@@ -11,7 +11,7 @@ export const AboutHero: React.FC = () => {
           {/* Text Content */}
           <div className="w-full lg:w-2/3 text-left space-y-4 md:space-y-6">
             <p className="text-lg">About CREDICORP</p>
-            <p className="text-3xl font-medium md:text-6xl leading-[1.2]">Leading The charge for Financial Inclusion</p>
+            <p className="text-3xl font-medium md:text-6xl leading-[1.2]">Leading The charge for Economic Inclusion</p>
           </div>
 
           {/* Optionally leave the right side empty for now */}

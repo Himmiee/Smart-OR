@@ -1,6 +1,6 @@
 "use client";
 
-import { BeneficiaryComponent } from "@/Layout/Sections/Initiatives/Calm/Beneficiaries";
+// import { BeneficiaryComponent } from "@/Layout/Sections/Initiatives/Calm/Beneficiaries";
 import { CalmBenefits } from "@/Layout/Sections/Initiatives/Calm/Benefits";
 import { CalmHero } from "@/Layout/Sections/Initiatives/Calm/Hero";
 import KeyFeaturesSection from "@/Layout/Sections/Initiatives/Calm/KeyFeatures";
@@ -13,7 +13,7 @@ export default function CalmInitiativesPage() {
       <ProjectCalmComponent />
       <KeyFeaturesSection />
       <CalmBenefits />
-      <BeneficiaryComponent />
+      {/* <BeneficiaryComponent /> */}
     </>
   );
 }

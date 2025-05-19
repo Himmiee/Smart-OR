@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="pt-12 px-6 md:px-0  flex items-center justify-center z-0 opacity-70 pointer-events-none select-none">
+        <div className="pt-12 px-6 lg:px-0  flex items-center justify-center z-0 opacity-70 pointer-events-none select-none">
           <Image
             src={footerPrintLogoBg}
             alt="Footer Watermark"

@@ -18,7 +18,7 @@ export const ThematicsFocus = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-0">
             {/* First column - Mobility (top) and Electronics (bottom) */}
             <div className="flex flex-col gap-6">
               <ScaleCard {...thematicsData[0]} /> {/* Mobility */}

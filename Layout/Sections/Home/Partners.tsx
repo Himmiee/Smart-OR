@@ -38,7 +38,7 @@ export const PartnersPage = () => {
                 slidesPerView: 2,
               },
               768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
               1024: {
                 slidesPerView: 4,
@@ -47,7 +47,7 @@ export const PartnersPage = () => {
           >
             {BankImg.map((bankImg, index) => (
               <SwiperSlide key={index}>
-                <div className="relative flex justify-center items-center h-64 w-[350px] md:w-[300px]">
+                <div className="relative flex justify-center items-center h-64 w-[350px] lg:w-[300px]">
                   <Image
                     src={bankImg}
                     alt={`Bank ${index}`}

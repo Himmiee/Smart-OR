@@ -1,20 +1,21 @@
 "use client";
 
 import { CardContainer } from "@/Layout/cards/CardContainer";
-import HeroImg from "@/public/scale/hero.jpg";
+import HeroImg from "@/public/credit/credit.png";
 
-export const ScaleHero: React.FC = () => {
+export const CreditHero: React.FC = () => {
   return (
     <div className="relative h-[55vh] md:h-[650px]  w-full overflow-hidden">
       <CardContainer bgImage={HeroImg}>
         <div className="flex flex-row items-end justify-between h-full w-full px-4 md:pl-12 ">
           {/* Text Content */}
-          <div className="w-full lg:w-full text-left space-y-4 md:space-y-6">
-            <p className="text-3xl font-medium md:text-6xl leading-[1.2]">
-              S.C.A.L.E
+          <div className="w-full max-w-4xl text-left space-y-4 md:space-y-6">
+            <p className="text-2xl font-medium md:text-6xl leading-[1.2]">
+              How To Apply For Credit Apply
             </p>
-            <p className="text-3xl md:text-5xl leading-[1.2]">
-              Securing Consumer Access for Local Enterprises
+            <p className="md:text-3xl leading-relaxed">
+              Apply now via our growing list of Financial Institutions, with up
+              to 50% reduction in interest rates.
             </p>
           </div>
 

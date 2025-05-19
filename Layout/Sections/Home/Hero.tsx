@@ -7,10 +7,13 @@ import { CardContainer } from "@/Layout/cards/CardContainer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CreditCard } from "lucide-react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import { ModalWrapper } from "@/Layout/modal/modal";
+import { HowItWorksPage } from "./HowItWorks";
 
 export const HomeHero: React.FC = () => {
   const [current, setCurrent] = useState(0);
   const [previous, setPrevious] = useState(0);
+  const [showModal, setShowModal] = useState(false);
   const delay = 10000;
 
   useEffect(() => {
@@ -41,7 +44,7 @@ export const HomeHero: React.FC = () => {
   };
 
   return (
-    <div className="relative h-[85vh] md:h-[70vh] lg:h-screen w-full overflow-hidden">
+    <div className="relative h-[850px] md:h-[70vh] lg:h-screen w-full overflow-hidden">
       {/* Keep previous slide visible underneath */}
       <div className="absolute top-0 left-0 w-full h-full">
         <CardContainer bgImage={HomeHeroSlideShowItems[previous].img.src}>
@@ -106,6 +109,7 @@ export const HomeHero: React.FC = () => {
                     <Button
                       variant="secondary"
                       size="lg"
+                      onClick={() => setShowModal(true)}
                       className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
                     >
                       <span>Access Your Credit</span>
@@ -168,6 +172,9 @@ export const HomeHero: React.FC = () => {
           <RiArrowRightSLine size={24} />
         </div>
       </div>
+      <ModalWrapper isOpen={showModal} onClose={() => setShowModal(false)}>
+        <HowItWorksPage bgColor="bg-white py-2" />
+      </ModalWrapper>
     </div>
   );
 };

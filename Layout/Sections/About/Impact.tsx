@@ -23,7 +23,7 @@ export const ImpactSection = ({ showLogo = true }: { showLogo?: boolean }) => {
           />
         </>
       )}
-      <div className="relative z-10 text-white max-w-screen-xl mx-auto lg:px-12">
+      <div className="relative z-10 text-white max-w-screen-xl mx-auto lg:">
         <div className="relative mb-12">
           <Image
             src={impactLogoImage}

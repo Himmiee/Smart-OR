@@ -9,9 +9,12 @@ export const CalmHero: React.FC = () => {
       <CardContainer bgImage={HeroImg}>
         <div className="flex flex-row items-end justify-between h-full w-full px-4 md:px-12 ">
           {/* Text Content */}
-          <div className="w-full lg:w-3/4 text-left space-y-4 md:space-y-6">
+          <div className="w-full lg:w-full text-left space-y-4 md:space-y-6">
             <p className="text-3xl font-medium md:text-6xl leading-[1.2]">
-              Credit Access for Light and Mobility (CALM) Fund
+              C.A.L.M
+            </p>
+            <p className="text-3xl md:text-5xl leading-[1.2]">
+              Credit Access for Light and Mobility
             </p>
           </div>
 

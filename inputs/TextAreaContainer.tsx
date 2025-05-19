@@ -30,7 +30,7 @@ export const FormTextArea: React.FC<{
       <Label htmlFor={name} className="">
         {label}{" "}
         {required && (
-          <span className="text-red-500 text-base relative -top-[2px]">*</span>
+          <span className=" text-base relative -left-1.5 -top-[0px]">*</span>
         )}
       </Label>
       <Textarea
