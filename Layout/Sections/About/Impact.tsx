@@ -4,7 +4,7 @@ import impactLogoImage from "@/public/about/hero/mini-logo.png";
 
 export const ImpactSection = ({ showLogo = true }: { showLogo?: boolean }) => {
   return (
-    <section className="px-6 py-16 relative overflow-hidden bg-black">
+    <section className="px-6 py-20 relative overflow-hidden bg-[#1C1C1C]">
       {showLogo && (
         <>
           <Image
@@ -44,27 +44,26 @@ export const ImpactSection = ({ showLogo = true }: { showLogo?: boolean }) => {
         <div className="grid md:grid-cols-3 gap-8 text-start">
           <div>
             <h3 className="text-5xl font-bold border-t-[1px] border-white/30 pt-12 md:pt-24 text-white">
-              1M+
+              50k+
             </h3>
             <p className="mt-2 opacity-80 max-w-[250px]">
-              Credit-backed consumers empowered to access essential goods and
-              services
+              Number of beneficiaries accessing consumer credit
             </p>
           </div>
           <div>
             <h3 className="text-5xl font-bold border-t-[1px] border-white/30 pt-12 md:pt-24 text-white">
-              500K+
+              24+
             </h3>
             <p className="mt-2 opacity-80 max-w-[250px]">
-              Small businesses supported through expanded market access
+              Number of partnering financial institutions
             </p>
           </div>
           <div>
             <h3 className="text-5xl font-bold border-t-[1px] border-white/30 pt-12 md:pt-24 text-white">
-              ₦200B+
+              ₦45b+
             </h3>
             <p className="mt-2 opacity-80 max-w-[250px]">
-              In facilitated consumer credit across key sectors
+              Total value of credit disbursed to beneficiaries
             </p>
           </div>
         </div>

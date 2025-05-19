@@ -9,6 +9,9 @@ import { NewsPage } from "@/Layout/Sections/Home/News";
 import { PartnersPage } from "@/Layout/Sections/Home/Partners";
 import { OurServicePage } from "@/Layout/Sections/Home/Server";
 import { OffersPage } from "@/Layout/Sections/Home/Offers";
+import { ImpactGrid } from "@/Layout/Sections/Impact/ImpactGrid";
+import { ImpactSection } from "@/Layout/Sections/About/Impact";
+import { ThematicsFocus } from "@/Layout/Sections/Home/Thematics";
 
 export default function HomePage() {
   const animations = {
@@ -54,18 +57,21 @@ export default function HomePage() {
       <section>
         <HomeHero />
       </section>
-      <section>
+      {/* <section>
         <OffersPage />
-      </section>
+      </section> */}
       <AnimatedSection animation={animations.missionAnimation}>
         <MissionPage />
       </AnimatedSection>
       <AnimatedSection animation={animations.serviceAnimation}>
         <OurServicePage />
       </AnimatedSection>
-      <section>
-        <BenefitsPage />
-      </section>
+      <AnimatedSection animation={animations.newsAnimation}>
+        <ImpactSection />
+      </AnimatedSection>
+      <AnimatedSection animation={animations.newsAnimation}>
+        <ThematicsFocus />
+      </AnimatedSection>
       <AnimatedSection animation={animations.howItWorksAnimation}>
         <HowItWorksPage />
       </AnimatedSection>
@@ -73,8 +79,11 @@ export default function HomePage() {
         <PartnersPage />
       </AnimatedSection>
       <AnimatedSection animation={animations.newsAnimation}>
-        <NewsPage />
+        <BenefitsPage />
       </AnimatedSection>
+      {/* <AnimatedSection animation={animations.newsAnimation}>
+        <NewsPage />
+      </AnimatedSection> */}
     </section>
   );
 }

@@ -56,46 +56,72 @@ export const HomeHero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
           className="absolute top-0 left-0 w-full h-full"
         >
           <CardContainer bgImage={HomeHeroSlideShowItems[current].img.src}>
             <div className="flex flex-col md:flex-row items-center justify-between h-full w-full">
               {/* Text Content with animations */}
-              <motion.div
-                className="max-w-full md:max-w-4xl space-y-4 md:space-y-6 p-3.5 md:p-8 mt-32 md:mt-0"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
-                <h1 className="text-[30px] md:text-4xl lg:text-[60px] text-[#FFF441] font-bold leading-tight">
-                  {HomeHeroSlideShowItems[current].heroText}{" "}
-                  <span className="text-[#FFF] block mt-1">
-                    {HomeHeroSlideShowItems[current].coloredText}
-                  </span>
-                </h1>
-                <p className="text-base sm:text-lg max-w-full md:max-w-lg">
-                  {HomeHeroSlideShowItems[current].description}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 sm:space-x-3 w-full sm:w-auto">
-                  <Button
-                    variant="secondary"
-                    size="lg"
-                    className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
+              <div className="max-w-full md:max-w-4xl space-y-4 md:space-y-6 p-3.5 md:p-8 mt-32 md:mt-0">
+                <AnimatePresence>
+                  <motion.div
+                    key={`title-${current}`}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="overflow-hidden"
                   >
-                    <span>Access Your Credit</span>
-                    <CreditCard className="ml-2 h-4 w-4 md:h-5 md:w-5 rotate-45 " />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
+                    <h1 className="text-[30px] md:text-4xl lg:text-[60px] text-[#FFF441] font-bold leading-tight">
+                      {HomeHeroSlideShowItems[current].heroText}{" "}
+                      <span className="text-[#FFF] block mt-1">
+                        {HomeHeroSlideShowItems[current].coloredText}
+                      </span>
+                    </h1>
+                  </motion.div>
+                </AnimatePresence>
+
+                <AnimatePresence>
+                  <motion.p
+                    key={`desc-${current}`}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3, delay: 0.05 }}
+                    className="text-base sm:text-lg max-w-full md:max-w-lg"
                   >
-                    <span>Access Your Credit</span>
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-                  </Button>
-                </div>
-              </motion.div>
+                    {HomeHeroSlideShowItems[current].description}
+                  </motion.p>
+                </AnimatePresence>
+
+                <AnimatePresence>
+                  <motion.div
+                    key={`buttons-${current}`}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 }}
+                    className="flex flex-col sm:flex-row gap-3 sm:space-x-3 w-full sm:w-auto"
+                  >
+                    <Button
+                      variant="secondary"
+                      size="lg"
+                      className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
+                    >
+                      <span>Access Your Credit</span>
+                      <CreditCard className="ml-2 h-4 w-4 md:h-5 md:w-5 rotate-45 " />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
+                    >
+                      <span>Become a Partner</span>
+                      <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    </Button>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
 
               {/* Dot Navigation */}
               <div className="hidden flex-col gap-3 pr-4 absolute right-4 top-1/2 transform -translate-y-1/2">

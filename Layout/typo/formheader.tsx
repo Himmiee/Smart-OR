@@ -4,7 +4,9 @@ interface FormHeaderProps {
   description: string;
   isDarkPill?: boolean;
   alignStart?: boolean;
-  showPill?: boolean; // NEW prop
+  showPill?: boolean;
+  isGradient?: boolean;
+  isWhiteTitle?: boolean;
 }
 
 export const FormHeader = ({
@@ -13,14 +15,27 @@ export const FormHeader = ({
   description,
   isDarkPill = true,
   alignStart = false,
-  showPill = true, 
+  showPill = true,
+  isGradient = false,
+  isWhiteTitle = false, 
 }: FormHeaderProps) => {
   const alignment = alignStart
     ? "items-start text-left max-w-3xl"
-    : "items-center text-center max-w-xl";
+    : "items-center text-center max-w-2xl";
+
+  let titleClasses = "text-4xl md:text-[50px] font-bold mt-4";
+
+  if (isGradient) {
+    titleClasses +=
+      " bg-gradient-to-r from-white to-[#108359] bg-clip-text text-transparent";
+  } else if (isWhiteTitle) {
+    titleClasses += " text-white";
+  }
 
   return (
-    <section className={`flex flex-col justify-center px-6 md:px-0 ${alignment}`}>
+    <section
+      className={`flex flex-col justify-center px-6 md:px-0 ${alignment}`}
+    >
       {showPill && (
         <div
           className={`${
@@ -33,7 +48,7 @@ export const FormHeader = ({
         </div>
       )}
 
-      <p className="text-4xl md:text-[45px] font-bold mt-4">{title}</p>
+      <p className={titleClasses}>{title}</p>
 
       <p className={`mt-2 ${isDarkPill ? "text-white/80" : "text-black/80"}`}>
         {description}

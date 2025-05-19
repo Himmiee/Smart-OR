@@ -13,9 +13,10 @@ export const OurServicePage = () => {
     <section className="bg-black text-white pt-12 ">
       <div className="flex justify-center items-center">
         <FormHeader
-          pillText="Our Services"
-          title="What We Offer"
-          description="From flexible credit options to financial empowerment tools, explore how we’re making access to finance more inclusive."
+          pillText="THOSE WE SERVE"
+          title="#HumansofCREDICORP"
+          isGradient
+          description="We serve the everyday heroes shaping Nigeria’s future — one credit story at a time."
         />
       </div>
 

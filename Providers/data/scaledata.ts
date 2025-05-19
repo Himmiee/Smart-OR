@@ -18,6 +18,14 @@ import TundeImg from "@/public/impact/people/tunde.png";
 import BelloImg from "@/public/impact/people/bello.png";
 import KehindeImg from "@/public/impact/people/kehinde.png";
 import ZainabImg from "@/public/impact/people/ibrahim.png";
+import ToneImg from "@/public/five-ta/t-one.png"
+import TtwoImg from "@/public/five-ta/t-two.jpg";
+import TthreeImg from "@/public/five-ta/t-three.jpg";
+import TfourImg from "@/public/five-ta/t-four.png";
+import TfiveImg from "@/public/five-ta/t-five.png";
+
+
+
 
 export const scaleData = [
   {
@@ -51,6 +59,40 @@ export const scaleData = [
     img: laptopImg,
   },
 ];
+
+export const thematicsData = [
+  {
+    title: "Mobility",
+    tag: "Esp. CNG & Electric Vehicles",
+    btnText: "Access Your Credit",
+    img: ToneImg,
+  },
+  {
+    title: "Energy Solutions",
+    tag: "Generators & Solar Panel",
+    btnText: "Access Your Credit",
+    img: TtwoImg,
+  },
+  {
+    title: "Home Improvement",
+    tag: "Furniture, Appliances & Building Materials",
+    btnText: "Access Your Credit",
+    img: TthreeImg,
+  },
+  {
+    title: "Life Essentials",
+    tag: "Healthcare, Apparel & Food & Beverages",
+    btnText: "Access Your Credit",
+    img: TfourImg,
+  },
+  {
+    title: "Electronics",
+    tag: "Digital Services",
+    btnText: "Access Your Credit",
+    img: TfiveImg,
+  },
+];
+
 
 export const ContactData = [
   {

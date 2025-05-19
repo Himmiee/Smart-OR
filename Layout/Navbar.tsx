@@ -100,9 +100,9 @@ const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         <div className="hidden lg:flex space-x-3 ml-6">
-          <Button variant="outline" className={textColor} size="lg">
+          {/* <Button variant="outline" className={textColor} size="lg">
             Login
-          </Button>
+          </Button> */}
           <Button variant="secondary" size="lg">
             Get Started
           </Button>
@@ -168,13 +168,13 @@ const Navbar: React.FC<NavbarProps> = ({
             </div>
           ))}
           <div className="flex flex-col space-y-3 pt-2">
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               className={`${textColor} w-full`}
             >
               Login
-            </Button>
+            </Button> */}
             <Button variant="secondary" size="lg" className="w-full">
               Get Started
             </Button>

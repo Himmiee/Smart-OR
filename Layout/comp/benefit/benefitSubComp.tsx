@@ -33,7 +33,7 @@ export const BenefitSubComponent: any = () => {
   };
 
   return (
-    <div className="relative h-[650px] w-full overflow-hidden flex justify-center items-center">
+    <div className="relative h-96 md:h-[650px] w-full overflow-hidden flex justify-center items-center">
       {/* Keep previous slide visible underneath */}
       <div className="absolute top-0 left-0 w-full h-full">
         <CardContainer bgImage={BenefitsHeroSlideShowItems[previous].img.src}>
@@ -55,7 +55,7 @@ export const BenefitSubComponent: any = () => {
             <div className="flex flex-col md:flex-row items-center justify-center h-full w-full">
               {/* Text Content with animations */}
               <motion.div
-                className="max-w-full md:max-w-4xl space-y-4 md:space-y-6 p-3.5 md:p-8 mt-32 md:mt-72"
+                className="max-w-full md:max-w-4xl space-y-4 md:space-y-6 p-3.5 md:p-8 mt-32 md:mt-96"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -65,7 +65,7 @@ export const BenefitSubComponent: any = () => {
                     {BenefitsHeroSlideShowItems[current].heroText}{" "}
                     <span className="text-[#FFF] block mt-1"></span>
                   </h1>
-                  <p className="text-base sm:text-lg max-w-full md:max-w-lg text-center">
+                  <p className="text-base sm:text-lg max-w-full md:max-w-lg text-center hidden">
                     {BenefitsHeroSlideShowItems[current].description}
                   </p>
 
@@ -82,7 +82,7 @@ export const BenefitSubComponent: any = () => {
       {/* Left Arrow */}
 
       <motion.div
-        className="absolute left-4 bottom-8 md:top-1/2 transform -translate-y-1/2 cursor-pointer"
+        className="absolute left-6 md:left-12 md:top-1/2 transform -translate-y-1/2 cursor-pointer"
         onClick={() => handleArrowClick("left")}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
@@ -94,7 +94,7 @@ export const BenefitSubComponent: any = () => {
 
       {/* Right Arrow */}
       <motion.div
-        className="absolute right-4 bottom-8 md:top-1/2 transform -translate-y-1/2 cursor-pointer"
+        className="absolute right-6 md:right-12 md:top-1/2 transform -translate-y-1/2 cursor-pointer"
         onClick={() => handleArrowClick("right")}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}

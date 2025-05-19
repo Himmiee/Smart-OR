@@ -6,7 +6,7 @@ import HomeImgFive from "@/public/hero/hero-image-five.png";
 // import imgOne from "@/public/sub/credit-card-svgrepo-com.png";
 import imgTwo from "@/public/sub/file-3-svgrepo-com 1.png";
 import imgThree from "@/public/sub/light-bulb-svgrepo-com 1.png";
-import imgFour from "@/public/sub/Group.png";
+import imgFour from "@/public/hero/learning-school_svgrepo.com.png";
 import personImg from "@/public/slide-img/img-one.png";
 import personImgTwo from "@/public/slide-img/img-two.png";
 import personImgThree from "@/public/slide-img/img-three.png";
@@ -54,7 +54,7 @@ import AboutNameOtunba from "@/public/about/about-names/otunba.png";
 import AboutNameAisha from "@/public/about/about-names/aisha.png";
 import AboutNameUzoma from "@/public/about/about-names/uzoma.png";
 import AboutNameOlanike from "@/public/about/about-names/olanike.png";
-import CollabImg from "@/public/calm/key/collab.png"
+import CollabImg from "@/public/calm/key/collab.png";
 import LeafImg from "@/public/calm/key/leaf.png";
 import AccessImg from "@/public/calm/key/access.png";
 import FinanceImg from "@/public/calm/key/finanace.png";
@@ -218,18 +218,18 @@ export const BenefitData = [
 export const HIWData = [
   {
     id: "01",
-    text: "Check Your Eligibility",
-    description: "Answer a few quick questions. ",
+    text: "Fill our Credit Interest Form",
+    description: "Help us understand your needs. ",
   },
   {
     id: "02",
-    text: "Choose a Financial Institution",
-    description: "Receive a decision in record time.",
+    text: "Choose a Financial Institution (PFI)",
+    description: "Select a PFI that's right for you.",
   },
   {
     id: "03",
-    text: "Apply & Get Approved",
-    description: "Receive a decision in record time.",
+    text: "Apply for Credit (with preferred PFI)",
+    description: "Submit your application and get approved*.",
   },
   {
     id: "04",
@@ -290,32 +290,20 @@ export const NewsData = [
 export const footerData = [
   {
     title: "Organization",
-    links: ["About Us", "Our Team", "Careers", "Contact Us"],
+    links: ["About Us", "Contact Us"],
   },
   {
     title: "Resources",
-    links: [
-      "How To Apply For Credit",
-      "Check Your Credit Score",
-      "Financial Literacy",
-      "News & Updates",
-      "FAQs",
-    ],
+    links: ["How To Apply For Credit", "Becoma A Partner"],
   },
   {
     title: "Institutions & Programs",
-    links: [
-      "Financial Institutions",
-      "Government Initiatives",
-      "Credit Infrastructure",
-      "C.A.L.M Fund",
-      "S.C.A.L.E Fund",
-    ],
+    links: ["C.A.L.M Fund", "S.C.A.L.E Fund"],
   },
-  {
-    title: "Stay Connected",
-    links: ["Partner With Us", "Support Our Mission", "News & Events"],
-  },
+  // {
+  //   title: "Stay Connected",
+  //   links: ["Partner With Us", "Support Our Mission", "News & Events"],
+  // },
 ];
 
 export const Ellipse = [

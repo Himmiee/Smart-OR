@@ -41,19 +41,18 @@ export const PartnersPage = () => {
                 slidesPerView: 3,
               },
               1024: {
-                slidesPerView: 6,
+                slidesPerView: 4,
               },
             }}
           >
             {BankImg.map((bankImg, index) => (
               <SwiperSlide key={index}>
-                <div className="flex justify-center items-center">
+                <div className="relative flex justify-center items-center h-64 w-[350px] md:w-[300px]">
                   <Image
                     src={bankImg}
                     alt={`Bank ${index}`}
-                    className="max-w-"
-                    width={200}
-                    height={200}
+                    fill
+                    className="object-contain"
                   />
                 </div>
               </SwiperSlide>
