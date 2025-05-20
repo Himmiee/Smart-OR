@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronUp } from "lucide-react";
 import { ModalWrapper } from "./modal/modal";
 import { HowItWorksPage } from "./Sections/Home/HowItWorks";
+import { useRouter } from "next/navigation";
 
 interface NavItem {
   label: string;
@@ -25,23 +26,9 @@ const Navbar: React.FC<NavbarProps> = ({
   navItems,
 }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setShowNavbar(currentScrollY < lastScrollY);
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
-
+  const router = useRouter();
   const toggleDropdown = (label: string) => {
     setActiveDropdown(activeDropdown === label ? null : label);
   };
@@ -49,12 +36,16 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${bgColor} pt-6 pb-4 backdrop-blur-sm ${
-          showNavbar ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${bgColor} pt-6 pb-4 backdrop-blur-sm translate-y-0
+        `}
       >
         <div className="container flex justify-between items-center max-w-screen-xl mx-auto px-6">
-          <Image src={CredicorpLogo} alt="logo" className="w-40 lg:w-48" />
+          <Image
+            onClick={() => router.push("/")}
+            src={CredicorpLogo}
+            alt="logo"
+            className="w-40 lg:w-48"
+          />
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-6">
@@ -134,7 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden mt-4 px-4 space-y-4">
+          <div className="lg:hidden mt-4 px-4 space-y-4 min-h-screen">
             {navItems.map((item, index) => (
               <div key={index}>
                 {item.subItems ? (

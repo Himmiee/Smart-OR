@@ -21,7 +21,7 @@ export const FormHeader = ({
 }: FormHeaderProps) => {
   const alignment = alignStart
     ? "items-start text-left max-w-3xl"
-    : "items-center text-center max-w-2xl";
+    : "items-center text-center max-w-xl";
 
   let titleClasses = "text-[30px] md:text-[50px] font-bold mt-4";
 

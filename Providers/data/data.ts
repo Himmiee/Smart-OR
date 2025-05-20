@@ -12,6 +12,9 @@ import personImgTwo from "@/public/slide-img/img-two.png";
 import personImgThree from "@/public/slide-img/img-three.png";
 import personImgFour from "@/public/slide-img/img-four.png";
 import personImgFive from "@/public/slide-img/img-five.png";
+import personImgSix from "@/public/slide-img/ifeanyi.png";
+import personImgSeven from "@/public/slide-img/adaobi.png";
+import personImgEight from "@/public/slide-img/nwosu.png";
 import slideImg from "@/public/sub/benefits/one-img.png";
 import slideImgTwo from "@/public/sub/benefits/two-img.png";
 import slideImgThree from "@/public/sub/benefits/three-img.png";
@@ -154,12 +157,9 @@ export const PeopleData = [
     img: personImgFour,
   },
   { name: "Emeka Ibe", role: "Store Manager", img: personImgFive },
-  { name: "Ify Uche", role: "Graphic Designer", img: personImgThree },
-  {
-    name: "Chinaza Okafor",
-    role: "Trader at Lagos Market",
-    img: personImgFour,
-  },
+  { name: "Ifeanyiwa Uche", role: "Sales Floor Leader", img: personImgSix },
+  { name: "Adaobi Okafor", role: "Hair Stylist", img: personImgSeven },
+  { name: "Chijioke Nwosu", role: "Accountant", img: personImgEight },
 ];
 
 export const BenefitsHeroSlideShowItems = [
@@ -295,7 +295,7 @@ export const footerData = [
   },
   {
     title: "Resources",
-    links: ["How To Apply For Credit", "Becoma A Partner"],
+    links: ["How To Apply For Credit", "Become A Partner"],
   },
   {
     title: "Initiatives & Programs",

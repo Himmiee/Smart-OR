@@ -30,7 +30,7 @@ export default function RootLayout({
   }, [pathname]);
 
   const navbarBgColor =
-    pathname === "/" ? "bg-black/10 backdrop-blur-sm" : "bg-white shadow-sm";
+    pathname === "/" ? "bg-black/50 backdrop-blur-sm" : "bg-white shadow-sm";
   const textColor = pathname === "/" ? "text-white" : "text-black";
 
   if (loading && pathname === "/") {

@@ -18,7 +18,7 @@ import TundeImg from "@/public/impact/people/tunde.png";
 import BelloImg from "@/public/impact/people/bello.png";
 import KehindeImg from "@/public/impact/people/kehinde.png";
 import ZainabImg from "@/public/impact/people/ibrahim.png";
-import ToneImg from "@/public/five-ta/t-one.png"
+import ToneImg from "@/public/five-ta/t-one.png";
 import TtwoImg from "@/public/five-ta/t-two.jpg";
 import TthreeImg from "@/public/five-ta/t-three.jpg";
 import TfourImg from "@/public/five-ta/t-four.png";
@@ -35,11 +35,9 @@ import optImg from "@/public/credit/credit-info/optimus0bank.png";
 import wemaImg from "@/public/credit/credit-info/wema-b.png";
 import ecoImg from "@/public/credit/credit-info/eco.png";
 
-
-
 export const scaleData = [
   {
-    title: "Moility",
+    title: "Mobility",
     tag: "Esp. CNG & Electric Vehicles",
     btnText: "Access Your Credit",
     img: carImg,
@@ -80,7 +78,7 @@ export const thematicsData = [
   {
     title: "Life Essentials",
     tag: "Healthcare, Apparel & Food & Beverages",
-    btnText: "Access Your Credit",
+    btnText: "r Credit",
     img: TfiveImg,
   },
   {
@@ -103,7 +101,6 @@ export const thematicsData = [
     img: TtwoImg,
   },
 ];
-
 
 export const ContactData = [
   {

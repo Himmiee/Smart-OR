@@ -9,11 +9,13 @@ import { footerData } from "@/Providers/data/data";
 import { CardContainer } from "./cards/CardContainer";
 import footerBg from "@/public/impact/bg-grad.png";
 import footerPrintLogoBg from "@/public/logo-asset/footer-print-logo.png";
+import { useRouter } from "next/navigation";
 
 const iconClasses = "text-white text-base";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const router = useRouter();
 
   return (
     <footer className="relative overflow-hidden">
@@ -24,7 +26,10 @@ const Footer: React.FC = () => {
         <div className="relative z-10 max-w-screen-xl mx-auto px-6 md:px-4">
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-6">
             {/* Logo */}
-            <div className="col-span-1">
+            <div
+              onClick={() => router.push("/")}
+              className="col-span-1 cursor-pointer"
+            >
               <Image
                 src={FooterImg}
                 alt="Credicorp Logo"

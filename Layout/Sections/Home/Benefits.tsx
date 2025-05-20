@@ -5,8 +5,12 @@ import { BenefitData } from "@/Providers/data/data";
 import Image from "next/image";
 import topRightImg from "@/public/hero/bottom-lef.png";
 import bottomLeftImg from "@/public/hero/bottom-lef.png";
+import { useState } from "react";
+import { ModalWrapper } from "@/Layout/modal/modal";
+import { HowItWorksPage } from "./HowItWorks";
 
 export const BenefitsPage = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <section className="py-12 relative">
       {/* Absolute positioned images */}
@@ -44,18 +48,38 @@ export const BenefitsPage = () => {
         </div>
         <div className="flex justify-center items-center px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl w-full">
-            {BenefitData.map((item, index) => (
-              <CardComponent
-                key={index}
-                imageSrc={item.img}
-                name={item.text}
-                description={item.description}
-                buttonText={item.btnText}
-              />
-            ))}
+            {BenefitData.map((item, index) => {
+              let onClick;
+
+              if (item.text === "Consumers") {
+                onClick = () => setShowModal(true);
+              } else {
+                onClick = () => {
+                  window.open(
+                    "https://credicorp-register.ng/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                };
+              }
+
+              return (
+                <CardComponent
+                  key={index}
+                  imageSrc={item.img}
+                  name={item.text}
+                  description={item.description}
+                  buttonText={item.btnText}
+                  onClick={onClick}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
+      <ModalWrapper isOpen={showModal} onClose={() => setShowModal(false)}>
+        <HowItWorksPage bgColor="bg-white py-2" />
+      </ModalWrapper>
     </section>
   );
 };
