@@ -31,7 +31,7 @@ export const MissionSubComponent = () => {
             className="text-4xl md:text-[50px] font-bold leading-snug"
             variants={missionTextVariants}
           >
-            Leading the Charge for Financial Inclusion
+            Leading the Charge for Economic Inclusion
           </motion.p>
           <motion.p className="mt-4 text-lg" variants={missionTextVariants}>
             The Nigerian Consumer Credit Corporation (CREDICORP) is a

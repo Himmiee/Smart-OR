@@ -23,7 +23,7 @@ export const FormHeader = ({
     ? "items-start text-left max-w-3xl"
     : "items-center text-center max-w-2xl";
 
-  let titleClasses = "text-4xl md:text-[50px] font-bold mt-4";
+  let titleClasses = "text-[30px] md:text-[50px] font-bold mt-4";
 
   if (isGradient) {
     titleClasses +=
