@@ -62,12 +62,13 @@ import FinanceImg from "@/public/calm/key/finanace.png";
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "How to Apply", href: "/credit" },
   {
     label: "Our Initiatives",
     href: "/initiatives",
     subItems: [
-      { label: "C.A.L.M Funds", href: "/initiatives/calm-funds" },
-      { label: "S.C.A.L.E", href: "/initiatives/scale-funds" },
+      { label: "C.A.L.M Fund", href: "/initiatives/calm-fund" },
+      { label: "S.C.A.L.E", href: "/initiatives/scale" },
     ],
   },
   // { label: "Impact", href: "/impact" },
@@ -210,7 +211,7 @@ export const BenefitData = [
   {
     img: vendorImg,
     text: "Vendors & Manufacturers",
-    btnText: "Grow with CREDICORP",
+    btnText: "Become with the vendor",
     description: "Grow your revenue with accelerated credit backed consumers.",
   },
 ];
@@ -297,8 +298,8 @@ export const footerData = [
     links: ["How To Apply For Credit", "Becoma A Partner"],
   },
   {
-    title: "Institutions & Programs",
-    links: ["C.A.L.M Fund", "S.C.A.L.E Fund"],
+    title: "Initiatives & Programs",
+    links: ["C.A.L.M Fund", "S.C.A.L.E"],
   },
   // {
   //   title: "Stay Connected",

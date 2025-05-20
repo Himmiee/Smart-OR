@@ -78,28 +78,29 @@ export const thematicsData = [
     img: ToneImg,
   },
   {
+    title: "Life Essentials",
+    tag: "Healthcare, Apparel & Food & Beverages",
+    btnText: "Access Your Credit",
+    img: TfiveImg,
+  },
+  {
     title: "Energy Solutions",
     tag: "Generators & Solar Panel",
     btnText: "Access Your Credit",
-    img: TtwoImg,
+    img: TthreeImg,
   },
+
   {
     title: "Home Improvement",
     tag: "Furniture, Appliances & Building Materials",
     btnText: "Access Your Credit",
-    img: TthreeImg,
-  },
-  {
-    title: "Life Essentials",
-    tag: "Healthcare, Apparel & Food & Beverages",
-    btnText: "Access Your Credit",
     img: TfourImg,
   },
   {
-    title: "Electronics",
-    tag: "Digital Services",
+    title: "Digital Devices",
+    tag: "Laptops, Smartphones & Tablets",
     btnText: "Access Your Credit",
-    img: TfiveImg,
+    img: TtwoImg,
   },
 ];
 
@@ -311,7 +312,7 @@ export const loanProviders = [
     ],
     applyMethods: {
       googlePlay:
-        "https://play.google.com/store/apps/details?id=com.fewchore.fewchoreapp",
+        "https://play.google.com/store/apps/details?id=com.exolve.fewchorepay",
       appleStore: "https://apps.apple.com/ng/app/fewchore-mobile/id1535024953",
       visit: "https://www.fewchorefinance.com/contact",
     },
@@ -345,7 +346,7 @@ export const loanProviders = [
     applyMethods: {
       onlinePortal: "https://fastcredit-ng.com/loan/apply",
       googlePlay:
-        "https://play.google.com/store/apps/details?id=com.fastcredit.split",
+        "https://play.google.com/store/apps/details?id=com.fastcredit&pli=1",
       visit: "https://fastcredit-ng.com/contact",
     },
     logo: fastImg,
@@ -357,7 +358,7 @@ export const loanProviders = [
       "Renewable Energy",
       "Personal Loans",
       "Tenure: 24 Months",
-      "Average Turnaround Time: 24 Hours",
+      "Average Turnaround Time: 48 Hours",
     ],
     applyMethods: {
       publicSectorLoans: "https://fastcrhttps://pagefinancials.com/ippis/",
@@ -379,7 +380,7 @@ export const loanProviders = [
       "Renewable Energy",
       "Personal Loans",
       "Tenure: 24 Months",
-      "Average Turnaround Time: 24 Hours",
+      "Average Turnaround Time: 48 Hours",
     ],
     applyMethods: {
       mobileApp: "https://www.optimusbank.com/mobile-app",
@@ -397,7 +398,7 @@ export const loanProviders = [
     tags: [
       "Renewable Energy",
       "Personal Loans",
-      "Tenure: 24 Months",
+      "Tenure: 12 Months",
       "Average Turnaround Time: 24 Hours",
     ],
     applyMethods: {
@@ -409,18 +410,15 @@ export const loanProviders = [
     logo: wemaImg,
   },
   {
-    name: "WEMA BANK",
+    name: "ECOBANK NIGERIA LTD",
     tags: [
-      "Renewable Energy",
+      "Asset Financing (BNPL) Loans",
       "Personal Loans",
-      "Tenure: 24 Months",
+      "Tenure: 48 Months",
       "Average Turnaround Time: 24 Hours",
     ],
     applyMethods: {
-      googlePlayStore:
-        "https://play.google.com/store/apps/details?id=com.wemabank.alat.prod&hl=en",
-      appStore: "https://apps.apple.com/ng/app/alat/id1222853161",
-      webPortal: "https://online.alat.ng/",
+      email: "consumerfinance@ecobank.com",
     },
     subText:
       "Ecobank conducts credit check on the customer and upon satisfactory review the loan is disbursed into customer’s account. Upon disbursement, the fund will be transferred to vendor’s account if the facility is Asset Financing",

@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import bottomLeftImage from "@/public/about/hero/bg-left.png";
 import impactLogoImage from "@/public/about/hero/mini-logo.png";
+import { Counter } from "@/Layout/variants/counter";
 
 export const ImpactSection = ({ showLogo = true }: { showLogo?: boolean }) => {
   return (
@@ -44,23 +47,25 @@ export const ImpactSection = ({ showLogo = true }: { showLogo?: boolean }) => {
         <div className="grid md:grid-cols-3 gap-8 text-start">
           <div>
             <h3 className="text-5xl font-bold border-t-[1px] border-white/30 pt-12 md:pt-24 text-white">
-              50k+
+              <Counter to={50000} format="k+" />
             </h3>
             <p className="mt-2 opacity-80 max-w-[250px]">
               Number of beneficiaries accessing consumer credit
             </p>
           </div>
+
           <div>
             <h3 className="text-5xl font-bold border-t-[1px] border-white/30 pt-12 md:pt-24 text-white">
-              24+
+              <Counter to={24} format="+" />
             </h3>
             <p className="mt-2 opacity-80 max-w-[250px]">
               Number of partnering financial institutions
             </p>
           </div>
+
           <div>
             <h3 className="text-5xl font-bold border-t-[1px] border-white/30 pt-12 md:pt-24 text-white">
-              ₦45b+
+              <Counter to={15000000000} format="b+" />
             </h3>
             <p className="mt-2 opacity-80 max-w-[250px]">
               Total value of credit disbursed to beneficiaries

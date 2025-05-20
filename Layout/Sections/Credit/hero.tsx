@@ -11,7 +11,7 @@ export const CreditHero: React.FC = () => {
           {/* Text Content */}
           <div className="w-full max-w-4xl text-left space-y-4 md:space-y-6">
             <p className="text-2xl font-medium md:text-6xl leading-[1.2]">
-              How To Apply For Credit Apply
+              How To Apply For Credit
             </p>
             <p className="md:text-3xl leading-relaxed">
               Apply now via our growing list of Financial Institutions, with up

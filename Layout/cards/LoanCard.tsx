@@ -1,5 +1,6 @@
 import Image from "next/image";
 import bankImg from "@/public/credit/credit-info/bank.png";
+import { GoClock } from "react-icons/go";
 
 export interface ApplyMethods {
   [key: string]: string;
@@ -114,16 +115,21 @@ export const LoanProviderCard = ({ provider }: any) => {
 
         {/* Tags Section */}
         <div className="flex flex-wrap gap-2 mb-4">
-          {provider.tags?.map((tag: string, index: number) => (
-            <span
-              key={index}
-              className="bg-[#F8F8F8] text-black/80 border-[#0FC583] border-[1px] text-xs px-3 py-2 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
+          {provider.tags?.map((tag: string, index: number) => {
+            const isTurnaroundTag = tag
+              .toLowerCase()
+              .includes("average turnaround time:");
+            return (
+              <span
+                key={index}
+                className="flex items-center gap-1 bg-[#F8F8F8] text-black/80 border-[#0FC583] border-[1px] text-xs px-3 py-2 rounded-full"
+              >
+                {isTurnaroundTag && <GoClock className="text-sm" />}
+                {tag}
+              </span>
+            );
+          })}
         </div>
-
         {/* Apply Section */}
         <div className="mt-6">
           <h3 className="text-lg font-medium mb-2">To Apply</h3>

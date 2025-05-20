@@ -1,17 +1,17 @@
 import Image from "next/image";
-import CrediImg from "@/public/about/hero/credi.png";
+import CrediImg from "@/public/logo-asset/credicorb.png";
 import PresidentImg from "@/public/about/hero/tbabs.png";
 
 export const PartnersSubComponent = () => {
   return (
     <main className="space-y-12 p-6 max-w-screen-xl mx-auto">
       {/* About Us Section */}
-      <section className="grid lg:grid-cols-2 lg:gap-8">
-        <div className="flex md:justify-center md:items-center -ml-12 md:-ml-24 lg:-ml-0 rounded-lg w-4/5 md:w-3/5 lg:w-full">
+      <section className="grid md:grid-cols-2 lg:gap-8 justify-items-center">
+        <div className="flex md:justify-center md:items-center rounded-lg w-4/5 :w-[70%]  lg:-mt-10">
           <Image
             src={CrediImg}
             alt="CrediCorp Logo"
-            className="lg:max-w-full "
+            className="md:max-w-full"
           />
         </div>
 
@@ -54,8 +54,8 @@ export const PartnersSubComponent = () => {
           <Image
             src={PresidentImg}
             alt="CrediCorp President"
-            width={300}
-            height={300}
+            width={350}
+            height={350}
             className="max-w-full rounded-r-xl hidden md:block"
           />
           <Image

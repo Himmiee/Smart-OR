@@ -33,11 +33,14 @@ export const IdentitficationCard: React.FC<IdentificationCardProps> = ({
         />
       </div>
       <div className="flex-grow">
-        <h3 className="text-3xl font-semibold text-[#090914] mt-4 md:mt-0">
+        <blockquote className="text-[#090914] text-lg mb-6 mt-4 md:mt-0">
+          "{quote}"
+        </blockquote>
+
+        <h3 className="text-sm font-semibold text-[#090914]  md:mt-0">
           {name}
         </h3>
-        <p className="text-base text-[#090914]/80  md:mb-6 my-1">{title}</p>
-        <blockquote className="text-[#090914] text-lg">"{quote}"</blockquote>
+        <p className="text-sm text-[#64748B]   my-1">{title}</p>
       </div>
     </div>
   );

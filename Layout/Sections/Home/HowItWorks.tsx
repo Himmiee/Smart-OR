@@ -59,12 +59,16 @@ export const HowItWorksPage = ({
                 </p>
               </div>
             </div>
-            <Link href="/credit" scroll>
+            <a
+              href="https://credicorp-register.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="bg-black text-white  px-4 rounded-md flex items-center cursor-pointer w-fit gap-2 h-12 mt-2 md:mt-0">
                 Get Started
                 <ArrowRight size={18} />
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

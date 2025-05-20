@@ -115,14 +115,20 @@ export const HomeHero: React.FC = () => {
                       <span>Access Your Credit</span>
                       <CreditCard className="ml-2 h-4 w-4 md:h-5 md:w-5 rotate-45 " />
                     </Button>
-                    <Button
-                      variant="outline"
-                      size="lg"
-                      className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
+                    <a
+                      href="https://credicorp-register.ng/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <span>Become a Partner</span>
-                      <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-                    </Button>
+                      <Button
+                        variant="outline"
+                        size="lg"
+                        className="w-full sm:w-auto text-sm md:text-base justify-between px-4"
+                      >
+                        <span>Become a Partner</span>
+                        <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                      </Button>
+                    </a>
                   </motion.div>
                 </AnimatePresence>
               </div>
