@@ -6,32 +6,24 @@ export const PartnersSubComponent = () => {
   return (
     <main className="space-y-12 p-6 max-w-screen-xl mx-auto">
       {/* About Us Section */}
-      <section className="grid md:grid-cols-2 lg:gap-8 justify-items-center">
-        <div className="flex md:justify-center md:items-center rounded-lg w-4/5 :w-[70%]  lg:-mt-10">
+      <section className="grid md:grid-cols-2 lg:gap-8 place-items-center  px-4">
+        <div className="flex justify-center items-center w-4/5 lg:w-[70%]">
           <Image
             src={CrediImg}
             alt="CrediCorp Logo"
-            className="md:max-w-full"
+            className="w-full h-auto object-contain"
           />
         </div>
 
-        <div className="bg-white lg:p-8">
+        <div className=" lg:p-8 text- max-w-xl">
           <h2 className="text-4xl font-semibold text-[#090914] mb-4">
             About Us
           </h2>
-          <p className="text-[#090914] mb-4">
-            At CREDICORP, we believe access to credit is access to opportunity.
-            As Nigeria's Consumer Credit Corporation, we are committed to
-            bending down financial barriers and empowering everyday Nigerians -
-            students, artisans, salaried workers, small business owners - to
-            build the lives they desire.
-          </p>
-          <p className="text-[#090914]">
-            We are a Federal Government-backed Development Finance Institution
-            with a clear mission: to democratize consumer credit and make it
-            work for the people. Through innovative systems, strategic
-            partnerships, and a people-first approach, we're reshaping Nigeria's
-            credit landscape, one person at a time.
+          <p className="text-[#090914] text-lg">
+            The Nigerian Consumer Credit Corporation (CREDICORP) is a
+            Development Finance Institution (DFI) of the Federal Government of
+            Nigeria, established with one mandate: to democratise access to
+            consumer credit for Nigeria’s working population.
           </p>
         </div>
       </section>
@@ -42,11 +34,9 @@ export const PartnersSubComponent = () => {
           <h2 className="text-4xl font-semibold text-[#090914] mb-4">
             Our Mandate
           </h2>
-          <p className="text-[#090914]">
-            At CrediCorp, our mandate is to unlock economic potential by making
-            credit accessible, inclusive, and growth-driven. We want to catalyze
-            financial empowerment—connecting individuals, small businesses, and
-            industries to the credit they need to thrive.
+          <p className="text-[#090914] text-lg">
+            To remove structural, market and policy barriers, and accelerate
+            access to consumer credit to 50% of all working Nigerians, by 2030.
           </p>
         </div>
 
