@@ -4,30 +4,42 @@ import { useForm, FormProvider } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { CustomInput } from "@/inputs/CustomInput";
 import { FormTextArea } from "@/inputs/TextAreaContainer";
-
-type ContactForm = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  message: string;
-};
+import { yupResolver } from "@hookform/resolvers/yup";
+import { ContactUsSchema } from "@/schema/validation.schema";
+import { ContactFormData, useSubmitContactForm } from "@/helpers/queries";
+import { useEffect } from "react";
+import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
 
 export const ContactFormComponent = () => {
-  const methods = useForm<ContactForm>({
+  const methods = useForm<ContactFormData>({
+    resolver: yupResolver(ContactUsSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
       email: "",
-      phone: "",
       message: "",
+      subject: "Contact Message",
     },
   });
+  const { mutate, isError, isSuccess, error, isPending, data } =
+    useSubmitContactForm();
+  useEffect(() => {
+    if (isError) {
+      toast.error(error.message);
+    }
+
+    if (isSuccess) {
+      toast.success(data.message);
+      window.scrollTo(0, 0);
+      methods.reset();
+    }
+  }, [isError, isSuccess, error, methods]);
 
   const { handleSubmit } = methods;
 
-  const onSubmit = (data: ContactForm) => {
-    console.log(data);
+  const onSubmit = (data: ContactFormData) => {
+    mutate(data);
   };
 
   return (
@@ -71,8 +83,17 @@ export const ContactFormComponent = () => {
             required={true}
           />
         </div>
-        <Button type="submit" variant="secondary" size="lg" className="w-full h-11 text-base">
-          Send
+        <Button
+          type="submit"
+          variant="secondary"
+          size="lg"
+          className="w-full h-11 text-base"
+        >
+          {isPending ? (
+            <Loader2 className="animate-spin w-full text-lg" />
+          ) : (
+            "Send"
+          )}
         </Button>
       </form>
     </FormProvider>

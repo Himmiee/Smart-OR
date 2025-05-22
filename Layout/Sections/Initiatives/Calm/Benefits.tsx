@@ -29,7 +29,7 @@ export const CalmBenefits = () => {
           />
         </div>
         <Button
-          className="rounded-full w-32 mx-auto bg-[#108359]"
+          className="rounded-full hidden w-32 mx-auto bg-[#108359]"
           variant="default"
           size="lg"
         >

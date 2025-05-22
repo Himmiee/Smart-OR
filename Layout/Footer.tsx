@@ -10,6 +10,7 @@ import { CardContainer } from "./cards/CardContainer";
 import footerBg from "@/public/impact/bg-grad.png";
 import footerPrintLogoBg from "@/public/logo-asset/footer-print-logo.png";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const iconClasses = "text-white text-base";
 
@@ -19,7 +20,6 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="relative overflow-hidden">
-      {/* Watermark Background Image */}
 
       {/* Actual Content on Top */}
       <CardContainer bgImage={footerBg}>
@@ -37,7 +37,6 @@ const Footer: React.FC = () => {
                 height={50}
               />
             </div>
-
             {/* Footer Sections */}
             {footerData.map((section, idx) => (
               <div key={idx}>
@@ -50,34 +49,51 @@ const Footer: React.FC = () => {
                       key={linkIdx}
                       className="hover:underline cursor-pointer"
                     >
-                      {link}
+                      <Link href={link.href}>{link.label}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
             ))}
-
             <div className="hidden md:flex space-x-4 ">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-9 h-9 cursor-pointer rounded-full bg-black flex items-center justify-center"
+              <a
+                href="https://x.com/CrediCorpNG"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaXTwitter className={iconClasses} />
-              </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="w-9 h-9 cursor-pointer rounded-full bg-black flex items-center justify-center"
+                >
+                  <FaXTwitter className={iconClasses} />
+                </motion.div>
+              </a>
 
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-9 h-9 cursor-pointer rounded-full bg-[#3b5998] flex items-center justify-center"
+              <a
+                href="https://www.facebook.com/credicorpng/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaFacebookF className={iconClasses} />
-              </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="w-9 h-9 cursor-pointer rounded-full bg-[#3b5998] flex items-center justify-center"
+                >
+                  <FaFacebookF className={iconClasses} />
+                </motion.div>
+              </a>
 
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-9 h-9 cursor-pointer rounded-full bg-[#0077b5] flex items-center justify-center"
+              <a
+                href="https://www.linkedin.com/company/credicorpng/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaLinkedinIn className={iconClasses} />
-              </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="w-9 h-9 cursor-pointer rounded-full bg-[#0077b5] flex items-center justify-center"
+                >
+                  <FaLinkedinIn className={iconClasses} />
+                </motion.div>
+              </a>
             </div>
           </div>
 
@@ -88,26 +104,44 @@ const Footer: React.FC = () => {
             </p>
 
             <div className="flex space-x-4 md:hidden">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-9 h-9 cursor-pointer rounded-full bg-black flex items-center justify-center"
+              <a
+                href="https://x.com/CrediCorpNG"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaXTwitter className={iconClasses} />
-              </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="w-9 h-9 cursor-pointer rounded-full bg-black flex items-center justify-center"
+                >
+                  <FaXTwitter className={iconClasses} />
+                </motion.div>
+              </a>
 
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-9 h-9 cursor-pointer rounded-full bg-[#3b5998] flex items-center justify-center"
+              <a
+                href="https://www.facebook.com/credicorpng/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaFacebookF className={iconClasses} />
-              </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="w-9 h-9 cursor-pointer rounded-full bg-[#3b5998] flex items-center justify-center"
+                >
+                  <FaFacebookF className={iconClasses} />
+                </motion.div>
+              </a>
 
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="w-9 h-9 cursor-pointer rounded-full bg-[#0077b5] flex items-center justify-center"
+              <a
+                href="https://www.linkedin.com/company/credicorpng/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaLinkedinIn className={iconClasses} />
-              </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="w-9 h-9 cursor-pointer rounded-full bg-[#0077b5] flex items-center justify-center"
+                >
+                  <FaLinkedinIn className={iconClasses} />
+                </motion.div>
+              </a>
             </div>
           </div>
         </div>

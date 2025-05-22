@@ -1,8 +1,8 @@
-import carImg from "@/public/scale/grid/fieldcar.png";
-import fruitImg from "@/public/scale/grid/fruit.png";
-import homeImg from "@/public/scale/grid/home.png";
-import laptopImg from "@/public/scale/grid/laptop.png";
-import fieldImg from "@/public/scale/field.png";
+import carImg from "@/public/scale/mobility.png";
+import fruitImg from "@/public/scale/life-essential.jpg";
+import homeImg from "@/public/scale/house.jpg";
+import laptopImg from "@/public/scale/digital.jpg";
+import fieldImg from "@/public/scale/center.jpg";
 import OtunbaImg from "@/public/impact/people/otunba.png";
 import AminaImg from "@/public/impact/people/amina.png";
 import EmekaImg from "@/public/impact/people/emeka.png";
@@ -43,6 +43,13 @@ export const scaleData = [
     img: carImg,
   },
   {
+    title: "Life Essentials",
+    tag: "Healthcare, Apparel & Food & Beverages",
+    btnText: "Access Your Credit",
+    img: fruitImg,
+  },
+
+  {
     title: "Energy Solutions",
     tag: "Generators & Solar Panel",
     btnText: "Access Your Credit",
@@ -55,14 +62,8 @@ export const scaleData = [
     img: homeImg,
   },
   {
-    title: "Life Essentials",
-    tag: "Healthcare, Apparel & Food & Beverages",
-    btnText: "Access Your Credit",
-    img: fruitImg,
-  },
-  {
-    title: "Electronics",
-    tag: "Digital Services",
+    title: "Digital Devices",
+    tag: "Laptops, Smartphones & Tablets",
     btnText: "Access Your Credit",
     img: laptopImg,
   },

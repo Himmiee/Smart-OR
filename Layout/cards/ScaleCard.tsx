@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import { ArrowRight } from "lucide-react";
+
 
 interface ScaleCardProps {
   title: string;

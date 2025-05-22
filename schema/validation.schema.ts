@@ -1,0 +1,46 @@
+import { SingleSchemasObjectKey } from "@/structure/types/types";
+import * as yup from "yup";
+
+export const emailSchema = yup.object({
+  email: yup
+    .string()
+    .required("Email is required.")
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      "Invalid Email format"
+    ),
+});
+
+const singleSchemasObject: SingleSchemasObjectKey = {
+  email: emailSchema,
+};
+
+const combineMultipleSchemas = (
+  mainSchema: yup.AnyObjectSchema,
+  arrayOfSchemaNames: string[]
+) => {
+  try {
+    let combinedSchema = mainSchema;
+
+    for (let index = 0; index < arrayOfSchemaNames.length; index++) {
+      const schemaNameIndex = arrayOfSchemaNames[
+        index
+      ] as keyof SingleSchemasObjectKey;
+      const schema = singleSchemasObject[schemaNameIndex];
+      combinedSchema = combinedSchema.concat(schema);
+    }
+
+    return combinedSchema;
+  } catch (error) {
+    console.error(error);
+    return mainSchema;
+  }
+};
+export const ContactUsSchema = combineMultipleSchemas(
+  yup.object({
+    firstName: yup.string().required("Firstname is required"),
+    lastName: yup.string().required("Lastname is required"),
+    message: yup.string().required("Message is required"),
+  }),
+  ["email"]
+);

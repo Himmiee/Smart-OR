@@ -75,7 +75,7 @@ export const navItems = [
     ],
   },
   // { label: "Impact", href: "/impact" },
-  { label: "Contact Us", href: "/contact" },
+  // { label: "Contact Us", href: "/contact" },
 ];
 export const HomeHeroSlideShowItems = [
   {
@@ -291,21 +291,27 @@ export const NewsData = [
 export const footerData = [
   {
     title: "Organization",
-    links: ["About Us", "Contact Us"],
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Contact Us", href: "/contact" },
+    ],
   },
   {
     title: "Resources",
-    links: ["How To Apply For Credit", "Become A Partner"],
+    links: [
+      { label: "How To Apply For Credit", href: "/" },
+      { label: "Become A Partner", href: "/" },
+    ],
   },
   {
     title: "Initiatives & Programs",
-    links: ["C.A.L.M Fund", "S.C.A.L.E"],
+    links: [
+      { label: "C.A.L.M Fund", href: "/initiatives/calm-fund" },
+      { label: "S.C.A.L.E", href: "/initiatives/scale" },
+    ],
   },
-  // {
-  //   title: "Stay Connected",
-  //   links: ["Partner With Us", "Support Our Mission", "News & Events"],
-  // },
 ];
+
 
 export const Ellipse = [
   RandEllipseOne,

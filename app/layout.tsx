@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import ReactQueryProvider from "@/Providers/Query/QueryProvider";
+import { Toaster } from "react-hot-toast";
 
 
 const outfit = Outfit({
@@ -24,6 +25,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo-asset/credicorb.png" />
       </head>
       <body className={`${outfit.className} antialiased`}>
+        <Toaster/>
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
