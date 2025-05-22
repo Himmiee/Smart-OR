@@ -1,7 +1,7 @@
 "use client";
 
 import { CardContainer } from "@/Layout/cards/CardContainer";
-import HeroImg from "@/public/scale/hero.jpg";
+import HeroImg from "@/public/scale/scale-hero.png";
 
 export const ScaleHero: React.FC = () => {
   return (
