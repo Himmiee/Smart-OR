@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview": "next start --port 1000",
+    "deploy": "next build && next start --port $(grep '^PORT' .env | cut -d '=' -f2)"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
