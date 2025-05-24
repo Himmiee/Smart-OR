@@ -122,7 +122,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
         </div>
-
+        
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="lg:hidden mt-4 px-4 space-y-4 min-h-screen">
