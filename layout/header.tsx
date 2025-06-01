@@ -10,7 +10,7 @@ export const HeaderComponent = () => {
           <Image src={logo} alt="logo-img" className="w-40" />
         </div>
         <a href="mailto:invulnerableexile@gmail.com">
-          <Button className="bg-black/30 border border-white text-white cursor-pointer w-[140px] h-11 hover:bg-black/50 transition-colors">
+          <Button className="bg-black/30 border border-white text-white cursor-pointer w-24 text-[13px] md:text-sm md:w-[140px] h-11 hover:bg-black/50 transition-colors">
             Contact Us
           </Button>
         </a>

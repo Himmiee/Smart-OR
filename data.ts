@@ -20,7 +20,7 @@ export const submitToWaitlist = async (
     });
 
     if (response.ok) {
-      return { success: true, message: "You've been added to the waitlist!" };
+      return { success: true, message: "Response submitted successfully!" };
     } else {
       return {
         success: false,
