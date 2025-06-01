@@ -14,7 +14,7 @@ export const HomeHero: React.FC = () => {
   const [current, setCurrent] = useState(0);
   const [previous, setPrevious] = useState(0);
   const [showModal, setShowModal] = useState(false);
-  const delay = 10000;
+  const delay = 5000;
 
   useEffect(() => {
     const interval = setInterval(() => {

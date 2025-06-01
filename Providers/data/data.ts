@@ -7,14 +7,13 @@ import HomeImgFive from "@/public/hero/hero-image-five.png";
 import imgTwo from "@/public/sub/file-3-svgrepo-com 1.png";
 import imgThree from "@/public/sub/light-bulb-svgrepo-com 1.png";
 import imgFour from "@/public/hero/learning-school_svgrepo.com.png";
-import personImg from "@/public/slide-img/img-one.png";
-import personImgTwo from "@/public/slide-img/img-two.png";
-import personImgThree from "@/public/slide-img/img-three.png";
-import personImgFour from "@/public/slide-img/img-four.png";
-import personImgFive from "@/public/slide-img/img-five.png";
-import personImgSix from "@/public/slide-img/ifeanyi.png";
-import personImgSeven from "@/public/slide-img/adaobi.png";
-import personImgEight from "@/public/slide-img/nwosu.png";
+import personImg from "@/public/slide-img/abdullahi.jpeg";
+import personImgTwo from "@/public/slide-img/Esther.jpeg";
+import personImgThree from "@/public/slide-img/Adamu.jpeg";
+import personImgFour from "@/public/slide-img/Ericson.jpeg";
+import personImgFive from "@/public/slide-img/hauwa.jpeg";
+import personImgSix from "@/public/slide-img/Joseph.jpeg";
+import personImgSeven from "@/public/slide-img/Olaitan.jpeg";
 import slideImg from "@/public/sub/benefits/one-img.png";
 import slideImgTwo from "@/public/sub/benefits/two-img.png";
 import slideImgThree from "@/public/sub/benefits/three-img.png";
@@ -148,18 +147,41 @@ export const defaultServiceItems = [
 ];
 
 export const PeopleData = [
-  { name: "Ginika Amadi", role: "Canteen Owner at Unilag", img: personImg },
-  { name: "Mustapha Bello", role: "Shop Owner", img: personImgTwo },
-  { name: "Mayowa Adeyemi", role: "Graphic Designer", img: personImgThree },
   {
-    name: "Aminat Mubarakah",
-    role: "Trader at Lagos Market",
+    name: "Abdullahi Adamu",
+    role: "Civil Servant (Pharmacist)",
+    img: personImg,
+  },
+  {
+    name: "Esther Akpabio",
+    role: "Civil Servant (Chief Clerical Officer)",
+    img: personImgTwo,
+  },
+  {
+    name: "Adamu Amadu ",
+    role: "Civil servant (inspector)",
+    img: personImgThree,
+  },
+  {
+    name: "Chukwuemeka Ericson ",
+    role: "Civil servant (transport and logistics)",
     img: personImgFour,
   },
-  { name: "Emeka Ibe", role: "Store Manager", img: personImgFive },
-  { name: "Ifeanyiwa Uche", role: "Sales Floor Leader", img: personImgSix },
-  { name: "Adaobi Okafor", role: "Hair Stylist", img: personImgSeven },
-  { name: "Chijioke Nwosu", role: "Accountant", img: personImgEight },
+  {
+    name: "Bawa A Hauwa",
+    role: "Civil Servant (Federal Ministry of Labour and Employment)",
+    img: personImgFive,
+  },
+  {
+    name: "Joseph Udah",
+    role: "Inspector(Nigerian Police Force)",
+    img: personImgSix,
+  },
+  {
+    name: "Olaitan Elizabeth ",
+    role: "Civil servant (Education worker)",
+    img: personImgSeven,
+  },
 ];
 
 export const BenefitsHeroSlideShowItems = [

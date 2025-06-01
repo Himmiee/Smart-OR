@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 
 export const AnimatedSection = ({ children, animation }: any) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.4, once: true });
+  const isInView = useInView(ref, { amount: 0, once: true }); 
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
@@ -21,6 +21,10 @@ export const AnimatedSection = ({ children, animation }: any) => {
       animate={hasAnimated ? animation.animate : animation.initial}
       transition={animation.transition}
       className="overflow-hidden"
+      style={{
+        backgroundColor: "transparent", 
+        minHeight: "fit-content",
+      }}
     >
       {children}
     </motion.div>
