@@ -7,7 +7,7 @@ import { WaitlistHeroSection } from "@/sections/waitlist/Hero";
 const WaitlistPage = () => {
   return (
     <ContainerCard backgroundImg={img} alt="Grid background">
-      <div className="flex flex-col md:flex-row w-full xl:mt-20 items-stretch min-h-screen overflow-hidden bg xl:min-h-auto max-w-[1600px] mx-auto">
+      <div className="flex flex-col md:flex-row w-full xl:mt-20 2xl:mt-44 items-stretch min-h-screen overflow-hidden bg xl:min-h-auto max-w-[1700px] mx-auto">
         {/* Left side - Text content */}
         <div className="xl:pl-12 px-2 md:px-8 xl:px-12 xl:pr-0 flex-1 xl:flex-none">
           <WaitlistHeroSection />
