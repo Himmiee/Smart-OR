@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CheckCircleIcon, Loader2 } from "lucide-react";
 import React, { useState } from "react";
-import { SiMailgun } from "react-icons/si";
+// import { SiMailgun } from "react-icons/si";
 import { useForm } from "react-hook-form";
-import { FaPhone } from "react-icons/fa6";
+// import { FaPhone } from "react-icons/fa6";
 import { toast } from "react-hot-toast";
 import { submitToWaitlist } from "@/data";
 import { CustomToast } from "@/layout/toaster";
@@ -41,7 +41,7 @@ export const WaitlistHeroSection: React.FC = () => {
   };
 
   return (
-    <section className="text-white w-full h-screen flex flex-col px-4 py-8">
+    <section className="text-white w-full pt-44 md:pt-0 md:h-screen flex flex-col px-4 py-8 ">
       <div className="flex-1 flex flex-col justify-center items-start max-w-full xl:max-w-[550px]">
         <p className="border-l-2 border-white px-4 text-lg md:text-xl xl:text-2xl font-eczar">
           Join Now
@@ -64,7 +64,7 @@ export const WaitlistHeroSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-6 md:pt-8 w-full">
+        <div className="pt-6 md:pt-14 w-full">
           <p className="text-sm md:text-base font-eczar pb-2">
             Join the future of surgical training
           </p>
@@ -101,7 +101,7 @@ export const WaitlistHeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full font-figtree py-4 md:py-6 xl:py-6 mt-auto">
+      {/* <div className="w-full font-figtree py-4 md:py-6 xl:py-6 mt-auto">
         <div className="max-w-full xl:max-w-[550px]">
           <div className="border-t border-white pt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
             <p className="font-medium text-sm md:text-base">Contact Info :</p>
@@ -121,7 +121,7 @@ export const WaitlistHeroSection: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
