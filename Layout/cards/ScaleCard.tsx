@@ -26,7 +26,7 @@ export const ScaleCard = ({
         <h3 className="text-lg font-semibold w-fit">{title}</h3>
         <p className="text-sm w-fit">{tag}</p>
         {/* <button className="text-sm mt-1 underline underline-offset-4 font-medium flex items-center gap-1">
-          {btnText}{" "}
+          {btnText}{
           <span>
             <ArrowRight />
           </span>
